@@ -1,0 +1,16 @@
+:root{
+    /* dark theme */
+    --dark-primary: #1F2033;
+    --dark-secondary: #E84646;
+    --dark-success: #2299EE;
+    --dark-accents: #000000;
+    --dark-admin: #D16565;
+    /* light theme */
+    --light-primary: #E6FEFA;
+    --light-secondary: #68EBD9;
+    --light-success: #E84646;
+    --light-accents: #41524F;
+
+    /*fonts*/
+    --font-primary: 'Ubuntu', sans-serif;
+}
