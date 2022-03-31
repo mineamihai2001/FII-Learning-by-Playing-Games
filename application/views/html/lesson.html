@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/application/views/styles/lesson.css" />
+    <link rel="stylesheet" href="../styles/lesson.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +15,11 @@
       src="https://kit.fontawesome.com/0d9365b070.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../src/index.js"></script>
     <title>Lessons</title>
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-item nav-brand">
         <a class="nav-logo" href="">
@@ -25,18 +27,25 @@
           <p>Lorem<b>Ipsumdolor</b></p>
         </a>
       </div>
-      <div class="nav-item"><a href="">Home</a></div>
-      <div class="nav-item current"><a href="">Learn</a></div>
-      <div class="nav-item"><a href="">About</a></div>
-      <div class="nav-item"><a href="">Account</a></div>
-      <div class="nav-item">
+      <input id="collapse" type="checkbox" style="display: none" />
+      <label id="menu-btn" class="nav-item" for="collapse">
+        <div class="burger"></div>
+      </label>
+      <ul class="nav-list">
+        <div class="nav-item"><a href="">Home</a></div>
+        <div class="nav-item current"><a href="">Learn</a></div>
+        <div class="nav-item"><a href="">About</a></div>
+        <div class="nav-item"><a href="">Account</a></div>
+        <div class="nav-item">
           <a href="">
-              <img class="profile" src="/application/views/images/profile_sample.jpg" alt="profile_pic">
+            <img
+              class="profile"
+              src="../images/profile_sample.jpg"
+              alt="profile_pic"
+            />
           </a>
-      </div>
-      <div class="menu-btn nav-item">
-        <span class="burger"></span>
-      </div>
+        </div>
+      </ul>
     </nav>
   </body>
 </html>
