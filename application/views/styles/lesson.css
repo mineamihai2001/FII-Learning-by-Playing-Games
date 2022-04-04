@@ -1,2 +1,214 @@
-@import 'index.css';
-@import 'navbar.css';
+@import "index.css";
+@import "navbar.css";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(var(--dark-primary) 20%, #46466e);
+  /* text-align: center; */
+}
+button {
+  cursor: pointer;
+}
+#page {
+  /* position: relative; */
+}
+#current {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#lesson {
+  text-align: start;
+  margin-right: auto;
+}
+#chapter {
+  text-align: end;
+}
+.current-status {
+  margin: 2rem 8rem;
+}
+#current-lesson,
+#current-chapter {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  opacity: 45%;
+}
+#lesson-name,
+#chapter-name {
+  font-size: 2.3vw;
+  font-weight: 500;
+}
+#lesson-name {
+  color: white;
+}
+#chapter-name {
+  color: var(--dark-secondary);
+}
+#main-pane {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15rem 0 10rem;
+  align-items: center;
+  /* width: 20rem; */
+  height: 60vh;
+  margin: 0;
+}
+#learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: scroll;
+}
+#learn > p {
+  display: inline-block;
+}
+#bottom-div {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.next {
+  margin: 0 8rem;
+  box-shadow: inset 0 0 0 0 #d35f5f;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  width: 15rem;
+  background-color: var(--dark-success);
+  padding: 2rem 0rem;
+  border-radius: 20px;
+  border: none;
+  /* -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s; */
+}
+.next:hover,
+.next:focus {
+  /* box-shadow: inset 0 0 0 0 #d80286; */
+  transform: scale(1.1);
+}
+.next > i {
+  margin-left: 0.4rem;
+}
+.next > p {
+  margin: 0;
+  display: inline-block;
+}
+
+#lessons-bar {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#lessons-bar > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bubble {
+  background-color: var(--dark-secondary);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+.bubble:hover,
+.bubble:focus {
+  transform: scale(1.3);
+  /* animation: new_scale  */
+}
+.curr-lesson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.curr-lesson > div:not(.bar) {
+  position: absolute;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+}
+.prev-lesson {
+  background-color: var(--dark-success);
+}
+.next-lesson {
+  background-color: rgb(161, 161, 161);
+}
+.bar {
+  height: 4vh;
+  width: 0.5rem;
+}
+.prev-lesson + .bar {
+  background-color: var(--dark-success);
+}
+.next-lesson + .bar,
+.curr-lesson + .bar {
+  background-color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 500px) {
+  #bottom-div {
+    justify-content: center;
+  }
+  .current-status {
+    margin: 2rem 3rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #lessons-bar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .bubble {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .curr-lesson {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .curr-lesson > div:not(.bar) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .bar {
+    height: 3vh;
+    width: 0.3rem;
+  }
+  #main-pane {
+    height: 20vh;
+  }
+
+  .next {
+    padding: 1rem 0;
+    width: 10rem;
+  }
+  .next > p {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  #main-pane {
+    width: 20rem;
+    height: 55vh;
+  }
+}

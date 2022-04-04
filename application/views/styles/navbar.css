@@ -10,11 +10,12 @@
   align-items: center;
   justify-content: flex-end;
   background-color: var(--dark-primary);
+  margin: 0;
   /* padding: 0 3rem; */
 }
 .nav-item {
   font-size: 1.2rem;
-  margin: 2vw 3vw 2vw 3vw;
+  margin: 1.5vw 3vw 1.5vw 3vw;
 }
 .nav-item > a {
   text-decoration: none;
@@ -33,7 +34,12 @@
   margin-right: auto;
   font-size: 2rem;
 }
-.nav-logo > img {
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-logo > svg {
   width: 2rem;
   height: 2rem;
 }
@@ -61,7 +67,7 @@ p > b {
   .nav-list {
     display: none;
     position: absolute;
-    top: 3.2rem;
+    top: 4rem;
     width: 100%;
     text-align: center;
   }

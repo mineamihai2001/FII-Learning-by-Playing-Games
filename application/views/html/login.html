@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d9365b070.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/index.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-item nav-brand">
+        <a class="nav-logo" href="">
+          <i class="fa fa-solid fa-keyboard"></i>
+          <p>Lorem<b>Ipsumdolor</b></p>
+        </a>
+      </div>
+    </nav>
+
+    <div id="page">
+      <div id="login-frame">
+        <div id="" class="component">
+          <div class="title"><p>Login</p></div>
+          <input
+            class="credentials"
+            type="text"
+            placeholder="E-mail or Username"
+          />
+          <br />
+          <input class="credentials" type="text" placeholder="Password" />
+        </div>
+        <div id="buttons" class="component">
+          <div class="main-login">
+            <button class="btn login-btn button_slide">Sign in</button>
+          </div>
+          <div class="bar">
+            <hr />
+            <p>Or</p>
+            <hr />
+          </div>
+
+          <div class="other-logins">
+            <button class="btn login-google button_slide">
+              <div>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 128 128"
+                  id="Social_Icons"
+                  version="1.1"
+                  viewBox="0 0 128 128"
+                  xml:space="preserve"
+                >
+                  <g id="_x31__stroke">
+                    <g id="Google">
+                      <rect
+                        clip-rule="evenodd"
+                        fill="none"
+                        fill-rule="evenodd"
+                        height="128"
+                        width="128"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M27.585,64c0-4.157,0.69-8.143,1.923-11.881L7.938,35.648    C3.734,44.183,1.366,53.801,1.366,64c0,10.191,2.366,19.802,6.563,28.332l21.558-16.503C28.266,72.108,27.585,68.137,27.585,64"
+                        fill="#FBBC05"
+                        fill-rule="evenodd"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M65.457,26.182c9.031,0,17.188,3.2,23.597,8.436L107.698,16    C96.337,6.109,81.771,0,65.457,0C40.129,0,18.361,14.484,7.938,35.648l21.569,16.471C34.477,37.033,48.644,26.182,65.457,26.182"
+                        fill="#EA4335"
+                        fill-rule="evenodd"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M65.457,101.818c-16.812,0-30.979-10.851-35.949-25.937    L7.938,92.349C18.361,113.516,40.129,128,65.457,128c15.632,0,30.557-5.551,41.758-15.951L86.741,96.221    C80.964,99.86,73.689,101.818,65.457,101.818"
+                        fill="#34A853"
+                        fill-rule="evenodd"
+                      />
+                      <path
+                        clip-rule="evenodd"
+                        d="M126.634,64c0-3.782-0.583-7.855-1.457-11.636H65.457v24.727    h34.376c-1.719,8.431-6.397,14.912-13.092,19.13l20.474,15.828C118.981,101.129,126.634,84.861,126.634,64"
+                        fill="#4285F4"
+                        fill-rule="evenodd"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p>Sign in with Google</p>
+              </div>
+            </button>
+
+            <button class="btn login-microsoft button_slide">
+              <div>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  height="512px"
+                  style="enable-background: new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                >
+                  <g id="_x32_16-microsoft">
+                    <g>
+                      <rect
+                        height="215.65"
+                        style="fill: #f25022"
+                        width="215.648"
+                        x="30.905"
+                        y="30.904"
+                      />
+                      <rect
+                        height="215.65"
+                        style="fill: #7fba00"
+                        width="215.648"
+                        x="265.446"
+                        y="30.904"
+                      />
+                      <rect
+                        height="215.651"
+                        style="fill: #00a4ef"
+                        width="215.648"
+                        x="30.905"
+                        y="265.444"
+                      />
+                      <rect
+                        height="215.651"
+                        style="fill: #ffb900"
+                        width="215.648"
+                        x="265.446"
+                        y="265.444"
+                      />
+                    </g>
+                  </g>
+                  <g id="Layer_1" />
+                </svg>
+                <p>Sing in with Microsoft</p>
+              </div>
+            </button>
+
+            <button class="btn login-facebook button_slide">
+              <div>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 32 32"
+                  height="32px"
+                  id="Layer_1"
+                  version="1.0"
+                  viewBox="0 0 32 32"
+                  width="32px"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                      fill="#3B5998"
+                    />
+                    <path
+                      d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"
+                      fill="#FFFFFF"
+                      id="f"
+                    />
+                  </g>
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                </svg>
+                <p>Log in with Facebook</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
