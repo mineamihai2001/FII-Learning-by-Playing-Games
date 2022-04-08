@@ -1,0 +1,115 @@
+:root{
+    /* dark theme */
+    --dark-primary: #212530;
+    --dark-secondary: #E84646;
+    --dark-success: #2299EE;
+    --dark-accents: #000000;
+    --dark-admin: #D16565;
+    // white opacity 40%
+    
+    /* light theme */
+    --light-primary: #E6FEFA;
+    --light-secondary: #68EBD9;
+    --light-success: #E84646;
+    --light-accents: #41524F;
+
+    /*fonts*/
+    --font-primary: 'Ubuntu', sans-serif;
+}
+
+body {
+    text-decoration: none;
+    color: white;
+    background: var(--dark-primary);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+     
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-secondary);
+    cursor: pointer;
+}
+.hero{
+    text-align: center;
+    margin-top: 9em;
+    .title {
+        font-weight: bold;
+        font-size: 2.5em;
+        margin-bottom: -0.5em;
+        span {
+            color: var(--dark-secondary);
+        }
+    }
+    .description {
+        color: rgba($color: #ffffff, $alpha: 0.4);
+        text-align: center;
+        font-size: 1.8em;
+        
+    }
+    .container {
+        display:flex;
+        justify-content: center;
+        .primary-cta {
+            border: 4px solid var(--dark-secondary);
+            font-weight: bold;
+            font-size: 1.75em;
+            padding: 0.35em 1.30em;
+            margin: 0.5em;
+            &:hover {
+                background: var(--dark-secondary);
+                a {
+                     color: var(--dark-primary);
+                }
+            }
+        }
+        .secondary-cta {
+            border: 4px solid var(--dark-secondary);
+            font-weight: bold;
+            font-size: 1.75em;
+            padding: 0.35em 1.30em;
+            margin: 0.5em;
+            &:hover {
+                background: var(--dark-secondary);
+                a {
+                     color: var(--dark-primary);
+                }
+            }
+        }
+    }
+}
+.bottompage {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2em;
+    margin: 0;
+    img {
+        width: 30px;
+        //culoarea sa fie gri(alb opac 0.4)
+    }
+    .leftcorner {
+        margin-top: 16px;
+        padding-left: 5em;
+        .facebook-cta {
+            padding-right: 0.65em;
+        }
+        .linkedin-cta {
+            padding-left: 0.65em;
+        }
+    }
+    .rigthcorner {
+        padding-right: 5em;
+        display: flex;
+        color: rgba($color: #ffffff, $alpha: 0.4);
+        img{
+            padding-left: -1em;
+            padding-right: 1em;
+        }
+        font-weight: bold;
+    }
+}
