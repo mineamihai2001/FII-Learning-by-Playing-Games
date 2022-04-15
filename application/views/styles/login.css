@@ -3,7 +3,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(var(--dark-primary) 20%, #46466e);
+  /* background: linear-gradient(var(--dark-primary) 20%, #46466e); */
+  background: var(--dark-primary);
   text-align: center;
 }
 
@@ -14,13 +15,16 @@ body {
 }
 
 #login-frame {
-  background: #707180;
+  position: relative;
+  background: #ffffff;
   width: 30rem;
   height: 75vh;
   /* display: block; */
   /* text-align: center; */
   margin-top: 1rem;
-  border-radius: 3%;
+  border-radius: 15px;
+  /* border: 5px solid var(--dark-success);  */
+  box-shadow: 5px 5px var(--dark-secondary);
 }
 .title {
   color: var(--dark-secondary);
@@ -36,10 +40,13 @@ body {
 .credentials {
   border: none;
   margin: 0.5rem;
-  width: 20rem;
+  width: 17.5rem;
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-bottom: 1.5px solid rgb(116, 116, 116);
+  /* border-radius: 4px; */
+}
+.credentials:focus{
+  background-color:rgb(255, 243, 226);
 }
 
 .other-logins,
@@ -58,7 +65,7 @@ body {
   padding: 0rem 4rem;
   width: 100%;
   cursor: pointer;
-  border: 1px solid black;
+  border: 2px solid black;
 
 }
 
@@ -135,20 +142,42 @@ button > div {
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 700;
-  color: white;
+  color: var(--dark-primary);
 }
 hr {
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(146, 146, 146);
   width: 30%;
   /* margin: 1rem 3rem; */
 }
+.signup {
+  position: absolute;
+  right: 5rem;  
+  font-size: .75rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--dark-secondary);
+}
 
-@media only screen and (max-height: 800px) {
+
+
+@media only screen and (max-height:800px) {
   #login-frame {
-    height: 90vh;
+    /* height: 37.5rem; */
+    height: 77.5vh;
   }
-  .btn {
+  .btn:not(.login-btn) {
     margin: 1vh 1rem 1vh 0;
+    width: 80%;
+    padding: 0rem 0;
   }
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    padding-right: .5rem;
+  }
+  .btn > div > p {
+    font-size: .8rem !important;
+  }
+  
 }

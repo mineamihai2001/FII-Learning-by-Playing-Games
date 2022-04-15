@@ -1,0 +1,26 @@
+@import "./login.css";
+
+#first {
+  margin-top: 10rem;
+}
+
+.agreement {
+  margin-top: 1rem;
+  color: var(--dark-secondary);
+  font-size: 0.7rem;
+}
+.agreement > a {
+  text-decoration: underline;
+}
+.back {
+    position: absolute;
+    font-size: 2rem;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+@media only screen and (max-height: 800px) {
+  #first {
+    margin-top: 5rem;
+  }
+}

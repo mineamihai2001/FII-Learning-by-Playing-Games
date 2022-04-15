@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d9365b070.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/index.js"></script>
+    <title>SignUp</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-item nav-brand">
+        <a class="nav-logo" href="">
+          <i class="fa fa-solid fa-keyboard"></i>
+          <p>Lorem<b>Ipsumdolor</b></p>
+        </a>
+      </div>
+    </nav>
+
+    <div id="page">
+      <div id="login-frame">
+        <div class="back">
+          <a href="login.html"><i class="fa fa-solid fa-angle-left"></i></a>
+        </div>
+        <div id="first" class="component">
+          <div class="title"><p>Sign-up</p></div>
+          <input
+            class="credentials"
+            type="text"
+            placeholder="E-mail or Username"
+          />
+          <br />
+          <input class="credentials" type="text" placeholder="Password" />
+          <input
+            class="credentials"
+            type="text"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <div id="buttons" class="component">
+          <div class="main-login">
+            <button class="btn login-btn button_slide">Register</button>
+          </div>
+        </div>
+        <div class="agreement">
+          <input type="checkbox" />
+          <a>I agree to the terms and conditions</a>
+        </div>
+        <div class="agreement">
+          <input type="checkbox" />
+          <a
+            >I want to subscribe to the newsletter and/or <br />
+            receive notifications about news and offers</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

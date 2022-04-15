@@ -1,6 +1,7 @@
 :root{
     /* dark theme */
-    --dark-primary: #1F2033;
+    /* --dark-primary: #1F2033; */
+    --dark-primary: #0b0e14;
     --dark-secondary: #E84646;
     --dark-success: #2299EE;
     --dark-accents: #000000;
