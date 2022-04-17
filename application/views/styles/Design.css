@@ -1,0 +1,576 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#d16565;
+    border-radius: 100vw;
+    margin-block: 6px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color:#333757;
+    border-radius: 100vw;
+}
+
+body{
+    background-color: #1F2033;
+}
+
+#lessonh1{
+    
+    color: #E84646;
+}
+h1{
+    color:#E84646;
+}
+#questionh1{
+    position: absolute;
+    top: 43%;
+    color: #E84646;
+}
+
+h2{
+    color: #E84646;
+    right: 86%;
+    position: absolute;
+    top: 0px;
+}
+
+#l1{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l1:active{
+    border-color:#d16565;
+}
+
+#l2{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l2:active{
+    border-color:#d16565;
+}
+
+#l3{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l3:active{
+    border-color:#d16565;
+}
+
+#l4{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l4:active{
+    border-color:#d16565;
+}
+
+#l5{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l5:active{
+    border-color:#d16565;
+}
+
+#l6{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l6:active{
+    border-color:#d16565;
+}
+
+#l7{
+    margin-top: 10px;
+    color:azure;
+    width: 80%;
+    background-color:#333757;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    outline:none;
+}
+
+#l7:active{
+    border-color:#d16565;
+}
+
+.lessons{
+    position:absolute;
+    height:30%;
+    width:12%;
+    
+    overflow-y: scroll;
+    flex:1;
+}
+
+#qb1{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb2{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb3{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb4{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb5{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb6{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb7{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb8{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb9{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb10{
+    margin-top: 10px;
+    width: 80%;
+    background-color:#d16565;
+    display: block;
+    height: 45px;
+    font-size: 15px; 
+    border-radius: 12px;
+    color:azure;
+    
+}
+
+#qb:active{
+    border-color:#333757;
+}
+
+.questions{
+    position:absolute;
+    height:30%;
+    width:12%;
+    top:50%;
+    overflow-y: scroll;
+    flex:1;
+}
+
+
+#c1{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:75%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c1:active{
+    
+    border-color:#d16565
+}
+
+#c2{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:68%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c2:active{
+    
+    border-color:#d16565
+}
+
+#c3{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:61%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c3:active{
+    
+    border-color:#d16565
+}
+
+#c4{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:54%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c4:active{
+    
+    border-color:#d16565
+}
+
+#c5{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:47%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c5:active{
+    
+    border-color:#d16565
+}
+
+#c6{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:40%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c6:active{
+    
+    border-color:#d16565
+}
+
+#c7{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:33%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c7:active{
+    
+    border-color:#d16565
+}
+
+#c8{
+    color:azure;
+    width: 7%;
+    height: 3%;
+    right:26%;
+    position: absolute;
+    top: 14%;
+    background-color:#333757;
+    border-radius: 6px;
+    
+
+}
+#c8:active{
+    
+    border-color:#d16565
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+#more1{
+    display: none;
+}
+
+#more2{
+    display: none;
+}
+
+#submit1{
+    position:absolute;
+    top:53%;
+    left:72%;
+    background-color:#2299EE;
+    color:azure;
+    border-radius: 6px;
+}
+
+.border{
+    position:absolute;
+    color:#57585d;
+    background-color:#bcbcc2;
+    border-style:dashed;
+    width:54%;
+    height:20%;
+    left:20%;
+    top:42%;
+}
+
+#id1{
+    position:absolute;
+    top:53%;
+    left:69%;
+    width:2%;
+}
+
+#dnd1{
+    position:absolute;
+    top:40%;
+    left:25%;
+    font-size:150%;
+    color:#E84646;
+}
+
+.sectionscroll{
+    position:absolute;
+    height:60%;
+    width:12%;
+    left:25%;
+    flex:1; 
+    overflow-y: scroll;
+}
+
+#dragndrop1{
+    border:none;
+    background-color:#333757;
+    width: 15%;
+    height: 5%;
+    right:60%;
+    position: absolute;
+    top: 25%;
+    border-radius: 6px;
+}
+
+#dragndrop2{
+    border:none;
+    background-color:#333757;
+    width: 15%;
+    height: 5%;
+    right:60%;
+    position: absolute;
+    top: 30.5%;
+    border-radius: 6px;
+}
+
+#lesson1{
+    border:none;
+    background-color:#333757;
+    width: 20%;
+    height: 5%;
+    right:45%;
+    position: absolute;
+    top: 19.5%;
+    border-radius: 6px;
+}
+
+#quizz1{
+    border:none;
+    background-color:#d16565;
+    width: 20%;
+    height: 5%;
+    right:45%;
+    position: absolute;
+    top: 65%;
+    border-radius: 6px;
+}
+
+#dragndrop3{
+    border:none;
+    background-color:#d16565;
+    width: 15%;
+    height: 5%;
+    right:60%;
+    position: absolute;
+    top: 70.5%;
+    border-radius: 6px;
+}
+
+#dragndrop4{
+    border:none;
+    background-color:#d16565;
+    width: 15%;
+    height: 5%;
+    right:60%;
+    position: absolute;
+    top: 76%;
+    border-radius: 6px;
+}
+
+
+#qname{
+    position:fixed;
+    top: 67.5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+#lname{
+    position:fixed;
+    top: 22%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.lesson2{
+    color:azure;
+    position:fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
