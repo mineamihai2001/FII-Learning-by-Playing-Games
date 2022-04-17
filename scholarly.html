@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning by playing games</title>
   </head>
 
   <body>
@@ -13,7 +13,7 @@
         <h1>Learning by playing games</h1>
         <h3>
           <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"
-            >Check our site here!</a
+            target="_blank">Check our site here!</a
           >
         </h3>
         <section typeof="sa:AuthorsList">
@@ -100,7 +100,7 @@
         <ol role="directory">
           <li>
             <a href="#introduction">Introduction</a>
-            <ol role="directory">
+            <ol role="introduction-directory">
               <li><a href="#introduction__purpose">Purpose</a></li>
               <li>
                 <a href="#introduction__audience"
@@ -109,6 +109,16 @@
               </li>
               <li><a href="#introduction__product-scope">Product Scope</a></li>
               <li><a href="#introduction__references">References</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#structure">Structure</a>
+            <ol role="structure-directory">
+              <li><a href="#structure_home">Home Page</a></li>
+              <li><a href="#structure_login">Login Page</a></li>
+              <li><a href="#structure_signup">Sign-up Page</a></li>
+              <li><a href="#structure_lesson">Lesson Page</a></li>
+              <li><a href="#structure_admin">Admin Console</a></li>
             </ol>
           </li>
         </ol>
@@ -151,6 +161,41 @@
           <p>To be completed...</p>
         </section>
       </section>
+
+      <section id="structure" role="doc-pagelist">
+        <h2>2. Structure</h2>
+        <section id="structure_home" role="doc-pagelist">
+          <h3>2.1 Home</h3>
+          <p>
+            The <a href="./application/views/html/homepage.html">homepage</a>
+          </p>
+        </section>
+        <section id="structure_login" role="doc-pagelist">
+          <h3>2.2 Login</h3>
+          <p>
+            <a href="./application/views/html/login.html">login</a>
+          </p>
+        </section>
+        <section id="structure_signup" role="doc-pagelist">
+          <h3>2.3 Sign-up</h3>
+          <p>
+            <a href="./application/views/html/signup.html">sign-up</a>
+          </p>
+        </section>
+        <section id="structure_lesson" role="doc-pagelist">
+          <h3>2.4 Lesson</h3>
+          <p>
+            <a href="./application/views/html/lesson.html">lesson</a>
+          </p>
+        </section>
+        <section id="structure_admin" role="doc-pagelist">
+          <h3>2.5 Admin Console</h3>
+          <p>
+            <a href="./application/views/html/index.html">admin</a>
+          </p>
+        </section>
+      </section>
+
     </article>
   </body>
 </html>
