@@ -113,7 +113,7 @@ p > b {
     border: 2px solid grey;
     border-radius: 15%;
   }
-  #collapse:checked ~ ul {
+  #collapse:checked ~ .nav-list {
     display: block;
   }
 }
