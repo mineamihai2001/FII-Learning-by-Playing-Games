@@ -10,5 +10,6 @@ error_reporting(E_ALL);
 require_once HOME . DS . 'config.php';
 require_once HOME . DS .'utils'. DS .'autoload.php';
 
-$model = new MyModel();
-$model->get_data();
+
+$controller = new MyController();
+$controller->request();

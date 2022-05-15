@@ -3,7 +3,7 @@
 class BaseModel
 {
     public $db;
-    protected $data;
+    // protected $data;
 
     public function __construct()
     {
@@ -15,7 +15,7 @@ class BaseModel
             throw new Exception("Empty SQL query");
         }
 
-        echo $sql;
+        // echo $sql;
         $sth = $this->db->prepare($sql);
         $sth->execute();
         return $sth->fetchAll();

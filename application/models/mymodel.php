@@ -1,20 +1,62 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
+require_once 'basemodel.php';
 
 class MyModel extends BaseModel
 {
+    protected $data;
+    protected $questions_counter;
+    protected $lessons_counter;
+
     function __construct()
     {
         parent::__construct();
+        $this->data = array();
     }
-    public function get_data()
+
+    public function set_counters() {
+        $lessons_sql = "SELECT count(*) FROM lessons";
+        $questions_sql = "SELECT count(*) FROM questions";
+
+        $lessons_data = $this->query($lessons_sql);
+        $questions_data = $this->query($questions_sql);
+
+        $this->lessons_counter = $lessons_data[0]['count(*)']; 
+        $this->questions_counter = $questions_data[0]['count(*)']; 
+    }
+
+    public function get_counter() {
+        $this->set_counters();
+        return array(
+            'lessons_number' => $this->lessons_counter,
+            'questions_number' => $this->questions_counter
+        );
+    }
+
+    public function get_data($type, $id = null)
     {
-        $sql = 'SELECT * FROM test';
-        $data = $this->query($sql);
+        $sql = "SELECT * FROM {$type} WHERE id=$id";
+        // echo $sql;
+        $this->data = $this->query($sql);
+        // $this->print_data();
+        return $this->data;
+    }
+
+    public function add_lesson($type, $question_array = null)
+    {
+        $sql = "INSERT INTO {$type} (name) VALUES('mihai')";
+        $this->data = $this->query($sql);
+    }
+
+    public function add_question($type, $question_array = null)
+    {
+        $sql = "INSERT INTO {$type} (name) VALUES(mihai)";
+        $this->data = $this->query($sql);
+    }
+
+    public function print_data()
+    {
         print_r('<pre>');
-        print_r($data);
+        print_r($this->data);
+        print_r('</pre>');
     }
 }
