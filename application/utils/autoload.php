@@ -14,7 +14,7 @@ function autoload($class)
     //     include_once HOME . '/views'  . strtolower($class) . '.php';
     // }
 
-    $folders = array('models', 'controllers', 'utils');
+    $folders = array('models', 'controllers', 'utils', 'views');
 
     foreach($folders as $folder) {
         $path = HOME . DS . $folder . DS;
