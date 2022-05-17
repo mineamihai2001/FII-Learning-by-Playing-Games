@@ -34,7 +34,8 @@ class MyModel extends BaseModel
 
     public function get_data($type, $id = null)
     {
-        $sql = "SELECT * FROM {$type} WHERE id=$id";
+        // $sql = "SELECT * FROM {$type} WHERE id=$id";
+        $sql = "SELECT l.id, l.name, c.id AS 'chapter_id', c.name AS 'chapter_name', l.content FROM {$type} l JOIN chapters c ON l.chapter_id = c.id WHERE l.id=$id";
         // echo $sql;
         $this->data = $this->query($sql);
         // $this->print_data();

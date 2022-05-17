@@ -48,26 +48,25 @@ button {
 #main-pane {
   display: flex;
   justify-content: flex-end;
-  padding: 0 15rem 0 10rem;
+  padding: 0 5rem 0 10rem;
   align-items: center;
   /* width: 20rem; */
-  height: 60vh;
+  /* height: 60vh; */
   margin: 0;
 }
 #learn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80rem;
-  height: 30rem;
+  width: 100%;
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   overflow: scroll;
+  margin-left: 5rem;
 }
 #learn > p {
   display: inline-block;
+  margin: 0;
 }
 #bottom-div {
   display: flex;
@@ -131,6 +130,10 @@ button {
   transform: scale(1.3);
   /* animation: new_scale  */
 }
+.bubble:hover > .preview {
+  display: block;
+  transform: scale(0.7);
+}
 .curr-lesson {
   display: flex;
   justify-content: center;
@@ -162,6 +165,32 @@ button {
 .curr-lesson + .bar {
   background-color: rgb(161, 161, 161);
 }
+.preview {
+  display: none;
+	position: absolute;
+  left: 1.5rem;
+	width: 5rem;
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 1rem;
+	border-radius: 1rem;
+}
+
+.preview::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	/* left: 1.5em;  */
+  top: 1.6rem;
+  left: -1rem;
+	border: .75rem solid transparent;
+	border-top: none;
+  transform: rotate(270deg);
+	border-bottom-color: #fff;
+}
+
 
 @media only screen and (max-width: 500px) {
   #bottom-div {
@@ -208,7 +237,7 @@ button {
 
 @media only screen and (max-height: 800px) {
   #main-pane {
-    width: 20rem;
+    /* width: 20rem; */
     height: 55vh;
   }
 }
