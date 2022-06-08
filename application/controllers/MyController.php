@@ -103,7 +103,7 @@ class MyController extends BaseController
 
 
             $this->responseData = json_encode(array(
-                'status' => 'sucess',
+                'status' => 'success',
                 'body' => $data
             ));
         } catch (Error $e) {

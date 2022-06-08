@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once './templates/header.php' ?>
+<?php require_once VIEWS . "/templates/header.php" ?>
 
 <body>
-    <?php require_once './templates/navbar.php' ?>
+<?php require_once  VIEWS . '/templates/navbar.php' ?>
     <section class="hero">
         <div class="title">
             <h1>

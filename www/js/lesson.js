@@ -29,7 +29,7 @@ const statusBar = (lessonsNumber, lesson_id) => {
   for (let i = 0; i < lessonsNumber; ++i) {
     if (i < lesson_id - 1) {
       bubbles[i].classList.add("prev-lesson");
-      var preview = bubbles[i].getElementsByTagName("p");
+      const preview = bubbles[i].getElementsByTagName("p");
       preview[0].classList.add("preview");
       preview[0].innerHTML = "Lesson #" + (i + 1);
 
@@ -42,7 +42,7 @@ const statusBar = (lessonsNumber, lesson_id) => {
 const getLesson = () => {
   ajax({
     type: "GET",
-    url: "/application/index.php?type=lesson",
+    url: "/application/list?type=lesson",
   }).then((result) => {
     const response = JSON.parse(result);
     console.log(response);

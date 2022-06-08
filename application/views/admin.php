@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once './templates/header.php' ?>
+<?php require_once VIEWS . "/templates/header.php" ?>
 <body>
     <img src = "/www/images/micro.svg" alt="micro"/>
     <h2>Admin CONSOLE</h2>

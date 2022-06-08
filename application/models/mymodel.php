@@ -13,18 +13,20 @@ class MyModel extends BaseModel
         $this->data = array();
     }
 
-    public function set_counters() {
+    public function set_counters()
+    {
         $lessons_sql = "SELECT count(*) FROM lessons";
         $questions_sql = "SELECT count(*) FROM questions";
 
         $lessons_data = $this->query($lessons_sql);
         $questions_data = $this->query($questions_sql);
 
-        $this->lessons_counter = $lessons_data[0]['count(*)']; 
-        $this->questions_counter = $questions_data[0]['count(*)']; 
+        $this->lessons_counter = $lessons_data[0]['count(*)'];
+        $this->questions_counter = $questions_data[0]['count(*)'];
     }
 
-    public function get_counter() {
+    public function get_counter()
+    {
         $this->set_counters();
         return array(
             'lessons_number' => $this->lessons_counter,
