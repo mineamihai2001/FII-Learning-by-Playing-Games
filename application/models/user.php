@@ -13,7 +13,11 @@ class User extends BaseModel
         $this->data = $data;
     }
 
-    public function create() {
+    /**
+     * @throws Exception
+     */
+    public function create(): bool
+    {
         try{
             $this->username = $this->data['username'];
             $this->password = $this->data['password'];
@@ -29,7 +33,10 @@ class User extends BaseModel
         return true;
     }
 
-    public function login()
+    /**
+     * @throws Exception
+     */
+    public function login(): bool
     {
         try{
             $this->username = $this->data['username'];
@@ -42,8 +49,9 @@ class User extends BaseModel
                 WHERE username LIKE '$this->username'
                 OR email LIKE '$this->username'";
         $users = $this->query($sql);
+        print_r($users);
 
-        if ($users && count($users) == 1) {
+        if ($users && count($users)) {
             if(isset($users[0]['password']) && password_verify($this->password, $users[0]['password'])) {
                 return true;
             } 

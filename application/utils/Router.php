@@ -1,18 +1,18 @@
 <?php
 class Router
 {
-    static $routes = [];
-    static $get_routes = [];
+    static array $routes = [];
+    static array $get_routes = [];
 
-    static function post(string $path, callable $callback)
+    static function post(string $path, callable $callback): void
     {
         self::$routes[$path] = $callback;
     }
-    static function get(string $path, callable $callback)
+    static function get(string $path, callable $callback): void
     {
         self::$get_routes[$path] = $callback;
     }
-    static function run()
+    static function run(): void
     {
         $uri = $_SERVER['REQUEST_URI'];
         $found = false;
@@ -35,7 +35,7 @@ class Router
                         $key = $p[0];
                         $value = $p[1];
                         $result[$key] = $value;
-                        array_push($uri_params, $value);
+                        $uri_params[] = $value;
                     }
                 }
 
@@ -44,7 +44,7 @@ class Router
                 $route_values = array();
                 foreach ($route_params as $rp) {
                     $val = explode("=", $rp)[1];
-                    array_push($route_values, $val);
+                    $route_values[] = $val;
                 }
 
                 $new = str_replace($uri_params, $route_values, $uri);

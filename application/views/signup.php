@@ -19,7 +19,7 @@
                 <input id="confirm_password" name="confirm_password" class="credentials" type="password" placeholder="Confirm Password" />
                 <div id="buttons" class="component">
                     <div class="main-login">
-                        <button id="submit-btn" class="btn login-btn button_slide">Register</button>
+                        <button id="submit-btn" onclick="event.preventDefault()" class="btn login-btn button_slide">Register</button>
                     </div>
                 </div>
             </form>

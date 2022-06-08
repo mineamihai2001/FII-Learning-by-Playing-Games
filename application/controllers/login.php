@@ -3,16 +3,16 @@ require_once "basecontroller.php";
 
 class Login extends BaseController
 {
-    private $user;
+    private User $user;
     private $data;
 
     public function __construct()
     {
-        // print_r('construct');exit;
+        parent::__construct();
         $this->action_login();
     }
 
-    public function get_data($data)
+    public function get_data($data): bool
     {
         if (isset($data['username']) && isset($data['password'])) {
             $this->data = $data;
@@ -22,21 +22,16 @@ class Login extends BaseController
         }
     }
 
-    public function action_login()
+    public function action_login(): Response
     {
         $data = $_POST;
         $this->user = new User($data);
         if (!$this->get_data($data)) {
-            echo json_encode(array(
-                'status' => 'error',
-                'message' => 'no username/ password found'
-            ));
-            return false;
+            return new Response('error', 'incomplete data', $data);
         }
-
-        if ($this->user->login()) {
-            return true;
-        } else return false;
+        if ($this->user->login())
+            return new Response('success', 'success');
+        return new Response('error', 'invalid username/ password', $data);
     }
 }
 

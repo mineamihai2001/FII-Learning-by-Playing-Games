@@ -1,14 +1,12 @@
-var username = document.getElementById("username");
-var password = document.getElementById("password");
-var confirmPassword = document.getElementById("confirm_password");
-var submitBtn = document.getElementById("submit-btn");
-var form = document.getElementById("first");
-submitBtn.disabled = true;
-
-var pass = true;
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirm_password");
+const submitBtn = document.getElementById("submit-btn");
+const form = document.getElementById("first");
+let pass = false;
 
 confirmPassword.addEventListener("change", () => {
-  if (confirmPassword.value != password.value) {
+  if (confirmPassword.value !== password.value) {
     pass = false;
     console.log("not the same password");
     password.style.background = "#ff8282";
@@ -22,6 +20,12 @@ confirmPassword.addEventListener("change", () => {
 });
 
 submitBtn.addEventListener("click", () => {
-    console.log(pass + " " + username.value)
-  if (pass && username.value != "") form.submit();
+    console.log("here " + pass + " | " + username.value)
+  if(!username.value) {
+    username.style.background = "#ff8282";
+  }
+  if (pass && username.value !== "") {
+    username.style.background = "#fff";
+    form.submit();
+  }
 });

@@ -1,17 +1,18 @@
 <?php
-define("DS", DIRECTORY_SEPARATOR);
 define("HOME", dirname(__FILE__));
-define("BASEPATH", HOME . DS . "index.php");
-define("VIEWS", HOME . DS . "views");
-define("CONTROLLERS", HOME . DS . "controllers");
-define("MODELS", HOME . DS . "models");
+const DS = DIRECTORY_SEPARATOR;
+const BASEPATH = HOME . DS . "index.php";
+const VIEWS = HOME . DS . "views";
+const CONTROLLERS = HOME . DS . "controllers";
+const MODELS = HOME . DS . "models";
+const UTILS = HOME . DS . "utils";
 
 ini_set("display_errors", 1);
 ini_set("display_startup_errors", 1);
 error_reporting(E_ALL);
 
 ob_start();
-// session_start();
+session_start();
 
 require_once HOME . DS . "config.php";
 require_once HOME . DS . "utils" . DS . "autoload.php";
@@ -54,7 +55,7 @@ Router::get('/application/list?type={var_type}', function () {
 
 Router::post('/application/action_login', function () {
     $login = new Login();
-    if($login->action_login()) {
+    if($login->action_login()->getStatus() == 'success') {
         Router::redirect('/application/homepage');
     } else {
         Router::redirect('/application/login');
