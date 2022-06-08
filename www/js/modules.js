@@ -8,6 +8,7 @@ const ajax = (data) => {
   const xmlhttp = new XMLHttpRequest();
   return new Promise((resolve, reject) => {
     xmlhttp.onload = function () {
+      console.log(this.response);
       resolve(this.response);
     };
     xmlhttp.open(type, url);

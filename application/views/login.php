@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once './templates/header.php' ?>
+<?php require_once VIEWS . "/templates/header.php" ?>
 
 <body>
-    <?php require_once './templates/navbar.php' ?>
+<?php require_once  VIEWS . '/templates/navbar.php' ?>
     <div id="page">
         <div id="login-frame">
-            <div class="component">
+            <form action="/application/action_login" method="POST" id="login-form" class="component">
                 <div class="title">
                     <p>Login</p>
                 </div>
-                <input class="credentials" type="text" placeholder="E-mail or Username" />
+                <input class="credentials" type="text" placeholder="E-mail or Username" name="username"/>
                 <br />
-                <input class="credentials" type="text" placeholder="Password" />
-            </div>
-            <div id="buttons" class="component">
+                <input class="credentials" type="password" placeholder="Password" name="password"/>
                 <div class="main-login">
-                    <button class="btn login-btn button_slide">Sign in</button>
+                    <button type="submit" class="btn login-btn button_slide">Sign in</button>
                 </div>
+            </form>
+            <div id="buttons" class="component">
                 <div class="bar">
                     <hr />
                     <p>Or</p>
@@ -79,10 +79,11 @@
                 </div>
             </div>
             <div class="signup">
-                <a href="signup.html">Don't have an accout yet? Sign-up now.</a>
+                <a href="signup">Don't have an accout yet? Sign-up now.</a>
             </div>
         </div>
     </div>
+    <?php require_once VIEWS . '/templates/footer.php' ?>
 </body>
 
 </html>

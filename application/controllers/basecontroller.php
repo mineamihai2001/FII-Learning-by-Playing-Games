@@ -1,4 +1,5 @@
 <?php
+require_once UTILS . DS . "Response.php";
 class BaseController
 {
     protected $model;
@@ -13,17 +14,17 @@ class BaseController
         $this->headers = array(
             'success' => array('Content-Type: application/json', 'HTTP/1.1 200 OK'),
             'error' => array('Content-Type: application/json', 'HTTP/1.1 500 Internal Server Error'),
-            'unkown' => 'HTTP/1.1 404 Not Found'
+            'unknown' => 'HTTP/1.1 404 Not Found'
         );
         $this->error = array();
     }
 
     public function __call($name, $arguments)
     {
-        $this->send_output('', $this->headers['unkown']);
+        $this->send_output('', $this->headers['unknown']);
     }
 
-    protected function get_uri_segments()
+    protected function get_uri_segments(): array
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $uri = explode('/', $uri);
@@ -31,7 +32,7 @@ class BaseController
         return $uri;
     }
 
-    protected function get_query_string_params()
+    protected function get_query_string_params(): array
     {
         $params = $_SERVER['QUERY_STRING'];
         $params = explode("&", $params);
@@ -46,7 +47,7 @@ class BaseController
     }
 
 
-    protected function set_post()
+    protected function set_post(): void
     {
         $requestArr = file_get_contents('php://input');
         $this->postArr = json_decode($requestArr, true);

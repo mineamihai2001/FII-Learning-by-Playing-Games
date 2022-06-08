@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once './templates/header.php' ?>
+<?php require_once VIEWS . "/templates/header.php" ?>
 
 <body>
-    <?php require_once './templates/navbar.php' ?>
+    <?php require_once  VIEWS . '/templates/navbar.php' ?>
     <div id="page">
         <div id="current">
             <div id="lesson" class="current-status">
@@ -69,7 +69,7 @@
             </button>
         </div>
     </div>
-    <?php require_once "./templates/footer.php" ?>
+    <?php require_once VIEWS . "/templates/footer.php" ?>
 </body>
 
 </html>
