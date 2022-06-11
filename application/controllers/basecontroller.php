@@ -62,6 +62,7 @@ class BaseController
 
     protected function send_output($data, $httpHeaders = array())
     {
+        ob_end_clean();
         header_remove('Set-Cookie');
 
         if (is_array($httpHeaders) && count($httpHeaders)) {

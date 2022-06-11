@@ -9,6 +9,10 @@ class BaseModel
     {
         $this->db = Database::get_connection();
     }
+
+    /**
+     * @throws Exception
+     */
     public function query($sql)
     {
         if(!$sql) {

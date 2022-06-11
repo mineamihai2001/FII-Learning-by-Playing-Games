@@ -92,15 +92,16 @@ if ($page) { ?>
                 <div class="burger"></div>
             </label>
             <ul class="nav-list">
-                <div class="nav-item"><a href="homepage">Home</a></div>
-                <div class="nav-item current"><a href="lesson">Learn</a></div>
-                <div class="nav-item"><a href="">About</a></div>
-                <div class="nav-item"><a href="admin">Account</a></div>
-                <div class="nav-item">
+                <li class="nav-item"><a href="homepage">Home</a></li>
+                <li class="nav-item current"><a href="lesson">Learn</a></li>
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="admin">Account</a></li>
+                <li id="logout-btn" class="nav-item"><a href="/application/logout">Logout</a></li>
+                <li class="nav-item">
                     <a href="">
                         <img class="profile" src="/www/images/profile_sample.jpg" alt="profile_pic" />
                     </a>
-                </div>
+                </li>
             </ul>
         <?php } ?>
     </nav>
