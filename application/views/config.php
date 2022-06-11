@@ -20,7 +20,7 @@ $pages = array(
         "src" => "/www/js/index.js",
 
     ),
-    "lesson.php" => array(
+    "lessonmodel.php" => array(
         "title" => "Lesson",
         "navbar" => "yes",
         "style" => "/www/css/lesson.css",

@@ -1,0 +1,4 @@
+google-client-id:
+899484396458-g6b6iqrtk9f57so14vce3ahlenhahg1h.apps.googleusercontent.com
+google-client-secret:
+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
