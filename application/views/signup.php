@@ -24,7 +24,7 @@
                 </div>
             </form>
             <div class="agreement">
-                <input type="checkbox" />
+                <input type="checkbox" id="agree"/>
                 <a>I agree to the terms and conditions</a>
             </div>
             <div class="agreement">

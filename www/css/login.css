@@ -55,6 +55,14 @@ body {
   display: inline-block;
   /* border: 2px solid black; */
 }
+
+.g_id_signin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
 .btn {
   margin: 2vh 1rem 1vh 0;
   border: none;
@@ -152,14 +160,13 @@ hr {
 }
 .signup {
   position: absolute;
-  right: 5rem;  
+  right: 4rem;
+  bottom: 2rem;
   font-size: .75rem;
   text-decoration: underline;
   cursor: pointer;
   color: var(--dark-secondary);
 }
-
-
 
 @media only screen and (max-height:800px) {
   #login-frame {

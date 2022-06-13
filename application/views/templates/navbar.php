@@ -99,11 +99,10 @@ if ($page) { ?>
                 <li id="logout-btn" class="nav-item"><a href="/application/logout">Logout</a></li>
                 <li class="nav-item">
                     <a href="">
-                        <img class="profile" src="/www/images/profile_sample.jpg" alt="profile_pic" />
+                        <img id="picture" class="profile" src="/www/images/profile_sample.jpg" alt="profile_pic" />
                     </a>
                 </li>
             </ul>
         <?php } ?>
     </nav>
-
 <?php } ?>

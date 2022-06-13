@@ -25,6 +25,7 @@
             </div>
 
             <div class="other-logins">
+                <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
                 <script src="https://accounts.google.com/gsi/client?" async defer></script>
                 <div id="g_id_onload"
                      data-client_id="899484396458-g6b6iqrtk9f57so14vce3ahlenhahg1h.apps.googleusercontent.com"
@@ -54,7 +55,10 @@
                             if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                                 const response = JSON.parse(xmlhttp.responseText);
                                 console.log(response);
-                                if(response.status === 'success') {
+                                if (response.status === 'success') {
+                                    if(response.image) {
+                                        Cookies.set("image", response.image);
+                                    }
                                     window.location.href = '/application/homepage';
                                 }
                             }
@@ -81,50 +85,51 @@
                 <!--                        </div>-->
                 <!--                    </div>-->
 
-                <button class="btn login-microsoft button_slide">
-                    <div>
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             height="512px" style="enable-background: new 0 0 512 512" version="1.1"
-                             viewBox="0 0 512 512" width="512px" xml:space="preserve">
-                                <g id="_x32_16-microsoft">
-                                    <g>
-                                        <rect height="215.65" style="fill: #f25022" width="215.648" x="30.905"
-                                              y="30.904"/>
-                                        <rect height="215.65" style="fill: #7fba00" width="215.648" x="265.446"
-                                              y="30.904"/>
-                                        <rect height="215.651" style="fill: #00a4ef" width="215.648" x="30.905"
-                                              y="265.444"/>
-                                        <rect height="215.651" style="fill: #ffb900" width="215.648" x="265.446"
-                                              y="265.444"/>
-                                    </g>
-                                </g>
-                            <g id="Layer_1"/>
-                            </svg>
-                        <p>Sing in with Microsoft</p>
-                    </div>
-                </button>
+<!--                <button class="btn login-microsoft button_slide">-->
+<!--                    <div>-->
+<!--                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<!--                             height="512px" style="enable-background: new 0 0 512 512" version="1.1"-->
+<!--                             viewBox="0 0 512 512" width="512px" xml:space="preserve">-->
+<!--                                <g id="_x32_16-microsoft">-->
+<!--                                    <g>-->
+<!--                                        <rect height="215.65" style="fill: #f25022" width="215.648" x="30.905"-->
+<!--                                              y="30.904"/>-->
+<!--                                        <rect height="215.65" style="fill: #7fba00" width="215.648" x="265.446"-->
+<!--                                              y="30.904"/>-->
+<!--                                        <rect height="215.651" style="fill: #00a4ef" width="215.648" x="30.905"-->
+<!--                                              y="265.444"/>-->
+<!--                                        <rect height="215.651" style="fill: #ffb900" width="215.648" x="265.446"-->
+<!--                                              y="265.444"/>-->
+<!--                                    </g>-->
+<!--                                </g>-->
+<!--                            <g id="Layer_1"/>-->
+<!--                            </svg>-->
+<!--                        <p>Sing in with Microsoft</p>-->
+<!--                    </div>-->
+<!--                </button>-->
 
-                <button class="btn login-facebook button_slide">
-                    <div>
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0"
-                             viewBox="0 0 32 32" width="32px" xml:space="preserve">
-                                <g>
-                                    <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
-                                          fill="#3B5998"/>
-                                    <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"
-                                          fill="#FFFFFF" id="f"/>
-                                </g>
-                            <g/>
-                            <g/>
-                            <g/>
-                            <g/>
-                            <g/>
-                            <g/>
-                            </svg>
-                        <p>Log in with Facebook</p>
-                    </div>
-                </button>
+
+                <!--                <button class="btn login-facebook button_slide">-->
+                <!--                    <div>-->
+                <!--                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+                <!--                             enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0"-->
+                <!--                             viewBox="0 0 32 32" width="32px" xml:space="preserve">-->
+                <!--                                <g>-->
+                <!--                                    <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"-->
+                <!--                                          fill="#3B5998"/>-->
+                <!--                                    <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"-->
+                <!--                                          fill="#FFFFFF" id="f"/>-->
+                <!--                                </g>-->
+                <!--                            <g/>-->
+                <!--                            <g/>-->
+                <!--                            <g/>-->
+                <!--                            <g/>-->
+                <!--                            <g/>-->
+                <!--                            <g/>-->
+                <!--                            </svg>-->
+                <!--                        <p>Log in with Facebook</p>-->
+                <!--                    </div>-->
+                <!--                </button>-->
             </div>
         </div>
         <div class="signup">
