@@ -47,10 +47,10 @@ class Login extends BaseController
     public function api_login(): bool
     {
         if(!isset($_POST['email'])) {
-//            $this->send_output(array(
-//                'status' => 'error',
-//                'msg' => 'no email'
-//            ), $this->headers['error']);
+            $this->send_output(array(
+                'status' => 'error',
+                'msg' => 'no email'
+            ), $this->headers['error']);
             return false;
         }
         if(isset($_POST['image'])) {
@@ -67,7 +67,8 @@ class Login extends BaseController
         if($this->user->api_login()) {
             $this->send_output(array(
                 'status'=>'success',
-                'msg' =>'login successful'
+                'msg' =>'login successful',
+                'image' => $_COOKIE['image'],
             ), $this->headers['success']);
             return true;
         } else {

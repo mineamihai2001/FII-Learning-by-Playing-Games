@@ -2,6 +2,7 @@ const username = document.getElementById("username");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm_password");
 const submitBtn = document.getElementById("submit-btn");
+const agree = document.getElementById("agree");
 const form = document.getElementById("first");
 let pass = false;
 
@@ -24,7 +25,7 @@ submitBtn.addEventListener("click", () => {
   if(!username.value) {
     username.style.background = "#ff8282";
   }
-  if (pass && username.value !== "") {
+  if (pass && username.value !== "" && agree.checked) {
     username.style.background = "#fff";
     form.submit();
   }
