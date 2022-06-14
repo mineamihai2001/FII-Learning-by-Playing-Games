@@ -6,7 +6,7 @@ body {
   width: 100vw;
   background: linear-gradient(var(--dark-primary) 20%, #46466e);
   /* text-align: center; */
-}
+}   
 button {
   cursor: pointer;
 }
@@ -192,52 +192,223 @@ button {
 }
 
 
-@media only screen and (max-width: 500px) {
-  #bottom-div {
-    justify-content: center;
-  }
-  .current-status {
-    margin: 2rem 3rem;
-  }
+@media (min-width: 320px) and (max-width: 480px){
+    #lessons-bar {
+        margin-right: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        right:5%;
+        width:100%;
+        top:100px;
+      }
+    .bar {
+        width: 6%;
+        height: 0.5rem;
+    }
+    #lesson {
+        position:absolute;
+        right:70%;
+        top:50px;
+    }
+    #chapter{
+        position:absolute;
+        top:50px;
+        right:-15%;
+    }
+    .bubble {
+        background-color: var(--dark-secondary);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        transition: all 0.1s ease-in-out;
+        transform: scale(1.1);
+    }
+    .curr-lesson {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+    }
+    .curr-lesson > div:not(.bar) {
+        position: absolute;
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        background-color: white;
+    }
+    .prev-lesson {
+        background-color: var(--dark-success);
+    }
+    .next-lesson {
+        background-color: rgb(161, 161, 161);
+    }
+    .next {
+        margin: 0 8rem;
+        box-shadow: inset 0 0 0 0 #d35f5f;
+        transition: all 0.2s ease-in-out;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        width: 40%;
+        top:640px;
+        position:absolute;
+        background-color: var(--dark-success);
+        padding: 2rem 0rem;
+        border-radius: 20px;
+        border: none;
+        height:10px;
+    }
+    #learn {
+        margin:auto;
+        position:absolute;
+        top:290px;
+        right:5%;
+        width:90%;
+    }
 }
-@media only screen and (max-width: 900px) {
-  #lessons-bar {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .bubble {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .curr-lesson {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .curr-lesson > div:not(.bar) {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .bar {
-    height: 3vh;
-    width: 0.3rem;
-  }
-  #main-pane {
-    height: 20vh;
-  }
 
-  .next {
-    padding: 1rem 0;
-    width: 10rem;
-  }
-  .next > p {
-    display: none;
-  }
+@media (min-width: 481px) and (max-width: 768px){
+    #lessons-bar {
+        margin-right: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        right:0%;
+        width:100%;
+        top:100px;
+      }
+    .bar {
+        width: 8%;
+        height: 0.5rem;
+    }
+    #lesson {
+        position:absolute;
+        right:70%;
+        top:50px;
+    }
+    #chapter{
+        position:absolute;
+        top:50px;
+        right:-15%;
+    }
+    .bubble {
+        background-color: var(--dark-secondary);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        transition: all 0.1s ease-in-out;
+        transform: scale(1.1);
+    }
+    .curr-lesson {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+    .curr-lesson > div:not(.bar) {
+        position: absolute;
+        border-radius: 50%;
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: white;
+    }
+    .prev-lesson {
+        background-color: var(--dark-success);
+    }
+    .next-lesson {
+        background-color: rgb(161, 161, 161);
+    }
+    .next {
+        margin: 0 8rem;
+        box-shadow: inset 0 0 0 0 #d35f5f;
+        transition: all 0.2s ease-in-out;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: white;
+        width: 30%;
+        top:640px;
+        position:absolute;
+        background-color: var(--dark-success);
+        padding: 2rem 1rem;
+        border-radius: 20px;
+        border: none;
+        height:10px;
+    }
+    #learn {
+        margin:auto;
+        position:absolute;
+        top:290px;
+        right:5%;
+        width:90%;
+    }
+    
 }
 
-@media only screen and (max-height: 800px) {
-  #main-pane {
-    /* width: 20rem; */
-    height: 55vh;
-  }
+@media (min-width: 769px) and (max-width: 1024px){
+    #lessons-bar {
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        right:47%;
+        width:100%;
+    }
+    #learn {
+        margin:auto;
+        position:absolute;
+        top:290px;
+        right:5%;
+        width:67%;
+    }
+    .next {
+        margin: 0 8rem;
+        box-shadow: inset 0 0 0 0 #d35f5f;
+        transition: all 0.2s ease-in-out;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+        width: 15rem;
+        background-color: var(--dark-success);
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        border: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    #lessons-bar {
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+      }
+}
+
+@media (min-width: 1201px){
+    #lessons-bar {
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+      }
 }
