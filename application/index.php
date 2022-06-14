@@ -119,6 +119,15 @@ Router::post('/application/logout', function () {
     }
 });
 
+Router::post('/application/about', function() {
+    if (isset($_SESSION['username'])) {
+        $url = VIEWS . DS . "aboutpage.php";
+        require_once $url;
+    } else {
+        Router::redirect("/application/login");
+    }
+});
+
 Router::post('/application/404', function () {
     echo "<h1>Error 404 page not found</h1>";
 });

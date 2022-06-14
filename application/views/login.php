@@ -25,7 +25,7 @@
             </div>
 
             <div class="other-logins">
-                <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+                <script>Cookies.remove('image');</script>
                 <script src="https://accounts.google.com/gsi/client?" async defer></script>
                 <div id="g_id_onload"
                      data-client_id="899484396458-g6b6iqrtk9f57so14vce3ahlenhahg1h.apps.googleusercontent.com"
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="signup">
-            <a href="signup">Don't have an accout yet? Sign-up now.</a>
+            <a href="signup">Don't have an account yet? Sign-up now.</a>
         </div>
     </div>
 </div>

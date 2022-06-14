@@ -23,12 +23,12 @@
 
     <div class="container">
         <div class="primary-cta">
-            <a href="#" class="getstarted-cta">Get Started</a>
+            <a href="lesson" class="getstarted-cta">Get Started</a>
             <!-- GET STARTED BUTTON change #-->
         </div>
 
         <div class="secondary-cta">
-            <a href="#" class="learnmore-cta">Learn More</a>
+            <a href="about" class="learnmore-cta">Learn More</a>
             <!-- LEARN MORE BUTTON change #-->
         </div>
     </div>
