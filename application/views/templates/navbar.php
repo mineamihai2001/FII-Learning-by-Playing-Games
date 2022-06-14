@@ -95,7 +95,7 @@ if ($page) { ?>
                 <li class="nav-item"><a href="homepage">Home</a></li>
                 <li class="nav-item current"><a href="lesson">Learn</a></li>
                 <li class="nav-item"><a href="about">About</a></li>
-                <li class="nav-item"><a href="admin">Account</a></li>
+                <li class="nav-item"><a href="account">Account</a></li>
                 <li id="logout-btn" class="nav-item"><a href="/application/logout">Logout</a></li>
                 <li class="nav-item">
                     <a href="">

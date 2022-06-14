@@ -65,7 +65,19 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/Design.css",
         "src" => "/www/js/index.js",
+    ),
+    "about" => array(
+        "title" => "About",
+        "navbar" => "yes",
+        "style" => "/www/css/aboutpage.css",
+        "src" => "/www/js/index.js",
+    ),
 
+    "account" => array(
+        "title" => "Account",
+        "navbar" => "yes",
+        "style" => "/www/css/account.css",
+        "src" => "/www/js/index.js",
     ),
 );
 

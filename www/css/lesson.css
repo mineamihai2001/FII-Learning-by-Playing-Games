@@ -192,11 +192,12 @@ button {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px){ /* phones */
     #lessons-bar {
+        display: none;
         margin-right: auto;
         position: absolute;
-        display: flex;
+        /*display: flex;*/
         flex-direction: row;
         justify-content: center;
         align-items: center;

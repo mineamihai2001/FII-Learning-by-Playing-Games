@@ -128,6 +128,15 @@ Router::post('/application/about', function() {
     }
 });
 
+Router::post('/application/account', function() {
+    if (isset($_SESSION['username'])) {
+        $url = VIEWS . DS . "account.php";
+        require_once $url;
+    } else {
+        Router::redirect("/application/account");
+    }
+});
+
 Router::post('/application/404', function () {
     echo "<h1>Error 404 page not found</h1>";
 });
