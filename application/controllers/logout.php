@@ -11,6 +11,8 @@ class Logout extends BaseController
     {
         try{
             unset($_SESSION['username']);
+            unset($_SESSION['user_id']);
+            unset($_COOKIE['image']);
             return new Response("success", "logout successful");
         }catch (Exception $e) {
             return new Response("error");

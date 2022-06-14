@@ -94,7 +94,7 @@ if ($page) { ?>
             <ul class="nav-list">
                 <li class="nav-item"><a href="homepage">Home</a></li>
                 <li class="nav-item current"><a href="lesson">Learn</a></li>
-                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="about">About</a></li>
                 <li class="nav-item"><a href="admin">Account</a></li>
                 <li id="logout-btn" class="nav-item"><a href="/application/logout">Logout</a></li>
                 <li class="nav-item">
@@ -105,4 +105,5 @@ if ($page) { ?>
             </ul>
         <?php } ?>
     </nav>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 <?php } ?>
