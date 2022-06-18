@@ -82,13 +82,16 @@ a {
 }
 
 #progressLesson{
-  
   color:#E84646;
   position:absolute;
   width:45%;
   height:15%;
   right:20%;
   top:18%;
+}
+
+#youAre{
+  font-size:200%;
 }
 
 #progressQuizz{
@@ -98,6 +101,10 @@ a {
   height:15%;
   right:20%;
   top:38%;
+}
+
+#youCompleted{
+  font-size:200%;
 }
 
 #QuizzLeaderboardHead{
@@ -110,6 +117,42 @@ a {
   top:20%;
 }
 
+#quizzHead{
+  font-size:150%;
+  position:absolute;
+  width:2%;
+  height:60%;
+  top:-20%;
+  right:95%;
+}
+
+#CA{
+  font-size:150%;
+  position:absolute;
+  width:50%;
+  height:60%;
+  top:-20%;
+  right:33%;
+}
+
+#WA{
+  font-size:150%;
+  position:absolute;
+  width:50%;
+  height:60%;
+  top:-20%;
+  right:-2%;
+}
+
+#pointsHead{
+  font-size:150%;
+  position:absolute;
+  width:10%;
+  height:60%;
+  top:-20%;
+  right:5%;
+}
+
 #QuizzLeaderboardBody{
   background-color:#E84646;
   border-radius:0px 0px 15px 15px;
@@ -120,6 +163,41 @@ a {
   top:25%;
 }
 
+#quizz{
+  font-size:200%;
+  position:absolute;
+  width:2%;
+  height:60%;
+  top:-8%;
+  right:90%;
+}
+
+#correctAnswer{
+  font-size:200%;
+  position:absolute;
+  width:2%;
+  height:60%;
+  top:-8%;
+  right:70%;
+}
+
+#wrongAnswer{
+  font-size:200%;
+  position:absolute;
+  width:2%;
+  height:60%;
+  top:-8%;
+  right:35%;
+}
+
+#points{
+  font-size:200%;
+  position:absolute;
+  width:2%;
+  height:60%;
+  top:-8%;
+  right:10%;
+}
 
 
 .primary-cta {
@@ -141,4 +219,671 @@ a {
 
 .primary-cta:hover a {
   color: var(--dark-primary);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  #profilPicture{
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:22.5%;
+    top:25%;
+  }
+  #layer1{
+    color:#E84646;
+    position:absolute;
+    width:15%;
+    height:15%;
+    right:55%;
+    top:40%;
+  }
+  #progressLesson{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:25%;
+    top:45%;
+  }
+  #youAre{
+    font-size:100%;
+  }
+  #progressQuizz{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:25%;
+    top:55%;
+  }
+  #youCompleted{
+    font-size:100%;
+  }
+  #QuizzLeaderboardHead{
+    background-color:#333757;
+    border-radius:15px 15px 0px 0px;
+    position:absolute;
+    width:60%;
+    height:5%;
+    right:17.5%;
+    top:66.5%;
+  }
+  #quizzHead{
+    font-size:50%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:20%;
+    right:95%;
+  }
+  #CA{
+    font-size:50%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:20%;
+    right:33%;
+  }
+  #WA{
+    font-size:50%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:20%;
+    right:-2%;
+  }
+  #pointsHead{
+    font-size:50%;
+    position:absolute;
+    width:10%;
+    height:60%;
+    top:20%;
+    right:5%;
+  }
+  #QuizzLeaderboardBody{
+    background-color:#E84646;
+    border-radius:0px 0px 15px 15px;
+    position:absolute;
+    width:60%;
+    height:12%;
+    right:17.5%;
+    top:70%;
+  }
+  #quizz{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:90%;
+  }
+  #correctAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:70%;
+  }
+  #wrongAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:35%;
+  }
+  #points{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:12%;
+  }
+  .primary-cta {
+    position:absolute;
+    width:20%;
+    height:3%;
+    right:27.5%;
+    top:85%;
+    border: 4px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0.35em 1.30em;
+    margin: 0.5em;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+  #profilPicture{
+    position:absolute;
+    width:35%;
+    height:15%;
+    right:35%;
+    top:25%;
+  }
+  #layer1{
+    color:#E84646;
+    position:absolute;
+    width:15%;
+    height:15%;
+    right:55%;
+    top:40%;
+  }
+  #progressLesson{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:25%;
+    top:45%;
+  }
+  #youAre{
+    font-size:100%;
+  }
+  #progressQuizz{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:25%;
+    top:55%;
+  }
+  #youCompleted{
+    font-size:100%;
+  }
+  #QuizzLeaderboardHead{
+    background-color:#333757;
+    border-radius:15px 15px 0px 0px;
+    position:absolute;
+    width:50%;
+    height:5%;
+    right:22.5%;
+    top:66.5%;
+  }
+  #quizzHead{
+    font-size:50%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:20%;
+    right:95%;
+  }
+  #CA{
+    font-size:50%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:20%;
+    right:33%;
+  }
+  #WA{
+    font-size:50%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:20%;
+    right:-2%;
+  }
+  #pointsHead{
+    font-size:50%;
+    position:absolute;
+    width:10%;
+    height:60%;
+    top:20%;
+    right:5%;
+  }
+  #QuizzLeaderboardBody{
+    background-color:#E84646;
+    border-radius:0px 0px 15px 15px;
+    position:absolute;
+    width:50%;
+    height:12%;
+    right:22.5%;
+    top:70%;
+  }
+  #quizz{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:90%;
+  }
+  #correctAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:70%;
+  }
+  #wrongAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:35%;
+  }
+  #points{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:12%;
+  }
+  .primary-cta {
+    position:absolute;
+    width:10%;
+    height:3%;
+    right:32.5%;
+    top:85%;
+    border: 4px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0.35em 1.30em;
+    margin: 0.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  #profilPicture{
+    position:absolute;
+    width:27.5%;
+    height:15%;
+    right:60%;
+    top:25%;
+  }
+  #layer1{
+    color:#E84646;
+    position:absolute;
+    width:15%;
+    height:15%;
+    right:72.5%;
+    top:40%;
+  }
+  #progressLesson{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:12.5%;
+    top:22.5%;
+  }
+  #youAre{
+    font-size:125%;
+  }
+  #progressQuizz{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:12.5%;
+    top:32.5%;
+  }
+  #youCompleted{
+    font-size:125%;
+  }
+  #QuizzLeaderboardHead{
+    background-color:#333757;
+    border-radius:15px 15px 0px 0px;
+    position:absolute;
+    width:35%;
+    height:5%;
+    right:27.5%;
+    top:55%;
+  }
+  #quizzHead{
+    font-size:75%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:5%;
+    right:95%;
+  }
+  #CA{
+    font-size:75%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:5%;
+    right:33%;
+  }
+  #WA{
+    font-size:75%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:5%;
+    right:-2%;
+  }
+  #pointsHead{
+    font-size:75%;
+    position:absolute;
+    width:10%;
+    height:60%;
+    top:5%;
+    right:5%;
+  }
+  #QuizzLeaderboardBody{
+    background-color:#E84646;
+    border-radius:0px 0px 15px 15px;
+    position:absolute;
+    width:35%;
+    height:12%;
+    right:27.5%;
+    top:58.5%;
+  }
+  #quizz{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:90%;
+  }
+  #correctAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:70%;
+  }
+  #wrongAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:35%;
+  }
+  #points{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:12%;
+  }
+  .primary-cta {
+    position:absolute;
+    width:7.5%;
+    height:3%;
+    right:37.5%;
+    top:85%;
+    border: 4px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0.35em 1.30em;
+    margin: 0.5em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+  #profilPicture{
+    position:absolute;
+    width:22.5%;
+    height:15%;
+    right:65%;
+    top:25%;
+  }
+  #layer1{
+    color:#E84646;
+    position:absolute;
+    width:15%;
+    height:15%;
+    right:72.5%;
+    top:40%;
+  }
+  #progressLesson{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:12.5%;
+    top:22.5%;
+  }
+  #youAre{
+    font-size:125%;
+  }
+  #progressQuizz{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:12.5%;
+    top:32.5%;
+  }
+  #youCompleted{
+    font-size:125%;
+  }
+  #QuizzLeaderboardHead{
+    background-color:#333757;
+    border-radius:15px 15px 0px 0px;
+    position:absolute;
+    width:35%;
+    height:5%;
+    right:27.5%;
+    top:55%;
+  }
+  #quizzHead{
+    font-size:75%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:5%;
+    right:95%;
+  }
+  #CA{
+    font-size:75%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:5%;
+    right:33%;
+  }
+  #WA{
+    font-size:75%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:5%;
+    right:-2%;
+  }
+  #pointsHead{
+    font-size:75%;
+    position:absolute;
+    width:10%;
+    height:60%;
+    top:5%;
+    right:5%;
+  }
+  #QuizzLeaderboardBody{
+    background-color:#E84646;
+    border-radius:0px 0px 15px 15px;
+    position:absolute;
+    width:35%;
+    height:12%;
+    right:27.5%;
+    top:58.5%;
+  }
+  #quizz{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:90%;
+  }
+  #correctAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:70%;
+  }
+  #wrongAnswer{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:35%;
+  }
+  #points{
+    font-size:100%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:12%;
+  }
+  .primary-cta {
+    position:absolute;
+    width:5%;
+    height:3%;
+    right:37.5%;
+    top:85%;
+    border: 4px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0.35em 1.30em;
+    margin: 0.5em;
+  }
+}
+@media (min-width: 1200px){
+  #profilPicture{
+    position:absolute;
+    width:17.5%;
+    height:15%;
+    right:70%;
+    top:25%;
+  }
+  #layer1{
+    color:#E84646;
+    position:absolute;
+    width:15%;
+    height:15%;
+    right:72.5%;
+    top:40%;
+  }
+  #progressLesson{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:22.5%;
+    top:22.5%;
+  }
+  #youAre{
+    font-size:125%;
+  }
+  #progressQuizz{
+    color:#E84646;
+    position:absolute;
+    width:45%;
+    height:15%;
+    right:22.5%;
+    top:32.5%;
+  }
+  #youCompleted{
+    font-size:125%;
+  }
+  #QuizzLeaderboardHead{
+    background-color:#333757;
+    border-radius:15px 15px 0px 0px;
+    position:absolute;
+    width:35%;
+    height:5%;
+    right:5%;
+    top:25%;
+  }
+  #quizzHead{
+    font-size:125%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-15%;
+    right:95%;
+  }
+  #CA{
+    font-size:125%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:-15%;
+    right:33%;
+  }
+  #WA{
+    font-size:125%;
+    position:absolute;
+    width:50%;
+    height:60%;
+    top:-15%;
+    right:-2%;
+  }
+  #pointsHead{
+    font-size:125%;
+    position:absolute;
+    width:10%;
+    height:60%;
+    top:-15%;
+    right:5%;
+  }
+  #QuizzLeaderboardBody{
+    background-color:#E84646;
+    border-radius:0px 0px 15px 15px;
+    position:absolute;
+    width:35%;
+    height:17.5%;
+    right:5%;
+    top:29%;
+  }
+  #quizz{
+    font-size:150%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:90%;
+  }
+  #correctAnswer{
+    font-size:150%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:70%;
+  }
+  #wrongAnswer{
+    font-size:150%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:35%;
+  }
+  #points{
+    font-size:150%;
+    position:absolute;
+    width:2%;
+    height:60%;
+    top:-8%;
+    right:12%;
+  }
+  .primary-cta {
+    position:absolute;
+    width:5%;
+    height:3%;
+    right:45%;
+    top:85%;
+    border: 4px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0.35em 1.30em;
+    margin: 0.5em;
+  }
 }
