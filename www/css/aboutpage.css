@@ -17,7 +17,9 @@ body{
     background: var(--dark-primary);
 }
 .section{
-    border: 1px solid var(--dark-secondary);
+    border-top: 1px solid var(--dark-secondary);
+    border-right: 1px solid var(--dark-secondary);
+    border-left: 1px solid var(--dark-secondary);
     width: 100%;
     min-height: 100vh;
 }
