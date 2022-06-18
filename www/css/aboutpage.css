@@ -6,11 +6,24 @@
     padding:0px;
     box-sizing: border-box;
     font-family: var(--font-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    width: 100%;
+    background: var(--dark-primary);
 }
 .section{
+<<<<<<< Updated upstream
+=======
+    border-top: 1px solid var(--dark-secondary);
+    border-right: 1px solid var(--dark-secondary);
+    border-left: 1px solid var(--dark-secondary);
+>>>>>>> Stashed changes
     width: 100%;
     min-height: 100vh;
-    background: var(--dark-primary);
 }
 .container{
     width: 80%;
@@ -23,6 +36,7 @@
     width: 55%;
 }
 .image-section{
+    border: 1px solid var(--dark-secondary);
     float: right;
     width: 40%;
 }
@@ -47,6 +61,21 @@
     color: rgba(255, 255, 255, 0.4);
 }
 
+.content-section .content p1{
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--dark-secondary);
+}
+
+.content-section .content p2{
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+}
 .content-section .content .button a{
     background-color: var(--dark-secondary);
     color: var(--dark-primary);
