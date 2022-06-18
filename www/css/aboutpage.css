@@ -9,6 +9,7 @@
     font-family: var(--font-primary);
 }
 .section{
+    border: 1px solid var(--dark-secondary);
     width: 100%;
     min-height: 100vh;
     background: var(--dark-primary);
