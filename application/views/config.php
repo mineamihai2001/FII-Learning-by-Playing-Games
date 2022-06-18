@@ -11,6 +11,7 @@ $pages = array(
         "navbar" => "no",
         "style" => "/www/css/signup.css",
         "src" => "/www/js/signup.js",
+        "footer" => "yes",
 
     ),
     "homepage.php" => array(
@@ -18,6 +19,7 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/homapagemain.css",
         "src" => "/www/js/index.js",
+        "footer" => "yes",
 
     ),
     "lessonmodel.php" => array(
@@ -25,6 +27,7 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/lesson.css",
         "src" => "/www/js/lesson.js",
+        "footer" => "yes",
 
     ),
     "admin.php" => array(
@@ -32,6 +35,7 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/Design.css",
         "src" => "/www/js/index.js",
+        "footer" => "yes",
 
     ),
     "login" => array(
@@ -51,6 +55,7 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/homapagemain.css",
         "src" => "/www/js/index.js",
+        "footer" => "yes",
 
     ),
     "lesson" => array(
@@ -58,6 +63,7 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/lesson.css",
         "src" => "/www/js/lesson.js",
+        "footer" => "yes",
 
     ),
     "admin" => array(
@@ -65,12 +71,14 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/Design.css",
         "src" => "/www/js/index.js",
+        "footer" => "yes",
     ),
     "about" => array(
         "title" => "About",
         "navbar" => "yes",
         "style" => "/www/css/aboutpage.css",
         "src" => "/www/js/index.js",
+        "footer" => "yes",
     ),
 
     "account" => array(
@@ -78,14 +86,9 @@ $pages = array(
         "navbar" => "yes",
         "style" => "/www/css/account.css",
         "src" => "/www/js/index.js",
-    ),
+        "footer" => "yes",
 
-    /*
-    "footer" => array(
-        "style" => "/www/css/footer.css",
-        "src" => "/www/js/index.js",
     ),
-    */
 );
 
 

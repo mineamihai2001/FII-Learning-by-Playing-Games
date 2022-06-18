@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-<?php require_once VIEWS . "/templates/footer.php" ?>
+<?php require_once VIEWS . "/templates/footer2.php" ?>
 </body>
 
 </html>
