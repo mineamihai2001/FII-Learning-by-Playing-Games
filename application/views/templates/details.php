@@ -1,6 +1,5 @@
 <?php require_once VIEWS . "/config.php";
 if ($page) { ?>
-
     <footer class="footer">
         <div class="container">
             <div class="row">

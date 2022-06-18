@@ -53,6 +53,7 @@ $pages = array(
     "homepage" => array(
         "title" => "Home",
         "navbar" => "yes",
+        "footer" => "yes",
         "style" => "/www/css/homapagemain.css",
         "src" => "/www/js/index.js",
         "footer" => "yes",
