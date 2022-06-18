@@ -79,6 +79,13 @@ $pages = array(
         "style" => "/www/css/account.css",
         "src" => "/www/js/index.js",
     ),
+
+    /*
+    "footer" => array(
+        "style" => "/www/css/footer.css",
+        "src" => "/www/js/index.js",
+    ),
+    */
 );
 
 
