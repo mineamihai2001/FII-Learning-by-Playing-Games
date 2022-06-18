@@ -72,6 +72,7 @@ p > b {
     text-align: center;
   }
   .nav-item:not(#menu-btn) {
+    /* warning*/
   }
   .nav-brand {
     margin-top: 0;
