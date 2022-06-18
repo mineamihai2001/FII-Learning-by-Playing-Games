@@ -49,6 +49,7 @@ $pages = array(
     "homepage" => array(
         "title" => "Home",
         "navbar" => "yes",
+        "footer" => "yes",
         "style" => "/www/css/homapagemain.css",
         "src" => "/www/js/index.js",
 
@@ -79,13 +80,6 @@ $pages = array(
         "style" => "/www/css/account.css",
         "src" => "/www/js/index.js",
     ),
-
-    /*
-    "footer" => array(
-        "style" => "/www/css/footer.css",
-        "src" => "/www/js/index.js",
-    ),
-    */
 );
 
 
