@@ -13,6 +13,9 @@ class MyModel extends BaseModel
         $this->data = array();
     }
 
+    /**
+     * @throws Exception
+     */
     public function set_counters()
     {
         $lessons_sql = "SELECT count(*) FROM lessons";
@@ -25,6 +28,9 @@ class MyModel extends BaseModel
         $this->questions_counter = $questions_data[0]['count(*)'];
     }
 
+    /**
+     * @throws Exception
+     */
     public function get_counter()
     {
         $this->set_counters();
@@ -34,6 +40,9 @@ class MyModel extends BaseModel
         );
     }
 
+    /**
+     * @throws Exception
+     */
     public function get_data($type, $id = null)
     {
         // $sql = "SELECT * FROM {$type} WHERE id=$id";
@@ -44,12 +53,36 @@ class MyModel extends BaseModel
         return $this->data;
     }
 
-    public function add_lesson($type, $question_array = null)
+    /**
+     * @throws Exception
+     */
+    public function add_lesson($type, $body, $chapter, $name)
     {
-        $sql = "INSERT INTO {$type} (name) VALUES('mihai')";
+        $sql = "INSERT INTO {$type} (content, chapter_id, name) VALUES('$body', $chapter, '$name')";
         $this->data = $this->query($sql);
     }
 
+    /**
+     * @throws Exception
+     */
+    public function update_lesson($type, $id, $body)
+    {
+        $sql = "UPDATE {$type} SET content = '$body' WHERE id = $id";
+        $this->data = $this->query($sql);
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function delete_lesson($type, $id)
+    {
+        $sql = "DELETE FROM {$type} WHERE id = $id";
+        $this->data = $this->query($sql);
+    }
+
+    /**
+     * @throws Exception
+     */
     public function add_question($type, $question_array = null)
     {
         $sql = "INSERT INTO {$type} (name) VALUES(mihai)";

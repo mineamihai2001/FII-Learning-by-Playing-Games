@@ -3,8 +3,12 @@
   align-items: center;
   justify-content: flex-end;
   background-color: var(--dark-primary);
+  /*border: 1px solid var(--dark-secondary);*/
   /* padding: 0 3rem; */
 }
+/*.navbar:hover {
+border: 1px solid var(--dark-primary);
+}*/
 .nav-list {
   display: flex;
   align-items: center;

@@ -1,7 +1,13 @@
 <?php
 require_once 'basecontroller.php';
 
-
+/**
+ * REST API controller
+ * GET: get a lesson from the DB
+ * POST: add a lesson to the DB
+ * PUT: modify a lesson from the DB
+ * DELETE: delete a lesson from the DB
+ */
 class MyController extends BaseController
 {
     private $queryParams;
@@ -17,15 +23,31 @@ class MyController extends BaseController
 
     public function request()
     {
-        if (strtoupper($this->requestMethod) == 'POST') {
-            $this->add();
-        } elseif (strtoupper($this->requestMethod) == 'GET') {
-            $this->list();
-        } else {
+        if (!$this->validate_key())
             $this->send_output(json_encode(array(
                 'status' => 'error',
-                'body' => 'wrong request method'
+                'body' => 'missing/ wrong api-key'
             )), $this->headers['error']);
+
+        switch (strtoupper($this->requestMethod)) {
+            case "GET":
+                $this->list();
+                break;
+            case "POST":
+                $this->add();
+                break;
+            case "PUT":
+                 $this->modify();
+                break;
+            case "DELETE":
+                 $this->delete();
+                break;
+            default:
+                $this->send_output(json_encode(array(
+                    'status' => 'error',
+                    'body' => 'wrong request method'
+                )), $this->headers['error']);
+                break;
         }
     }
 
@@ -34,14 +56,116 @@ class MyController extends BaseController
     {
         try {
             $data = $this->post();
-            // $this->model->add_lesson();
+            if (!isset($data['body']) || !isset($data['type']) || !isset($data['chapter']) || !isset($data['name'])) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'missing body/ type/ chapter/ name'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            if (!($data['type'] == "lessons" || $data['type'] == 'questions')) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'type must be lesson or question'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            $this->model->add_lesson($data['type'], $data['body'], $data['chapter'], $data['name']);
             $this->responseData = json_encode(array(
-                'status' => 'sucess',
-                'body' => $data
+                'status' => 'success',
+                'body' => $data['type'] . ' successfully added'
             ));
-        } catch (Error $e) {
+        } catch (Exception $e) {
             $this->error['message'] = $e->getMessage();
             $this->error['header'] = $this->headers['error'];
+            $this->responseData = json_encode(array(
+                'status' => 'error',
+                'body' => $this->error['message']
+            ));
+            $this->send_output($this->responseData, $this->headers['error']);
+            return;
+        }
+        $this->send_output($this->responseData, $this->headers['success']);
+    }
+
+    public function modify() {
+        try {
+            $data = $this->post();
+            if (!isset($data['body']) || !isset($data['type']) || !isset($data['id'])) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'missing body/ type/ chapter/ name'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            if (!($data['type'] == "lessons" || $data['type'] == 'questions')) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'type must be lessons or questions'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            $this->model->update_lesson($data['type'], $data['id'], $data['body']);
+            $this->responseData = json_encode(array(
+                'status' => 'success',
+                'body' => $data['type'] . ' '. $data['id'] . ' ' . ' successfully updated'
+            ));
+        } catch (Exception $e) {
+            $this->error['message'] = $e->getMessage();
+            $this->error['header'] = $this->headers['error'];
+            $this->responseData = json_encode(array(
+                'status' => 'error',
+                'body' => $this->error['message']
+            ));
+            $this->send_output($this->responseData, $this->headers['error']);
+            return;
+        }
+        $this->send_output($this->responseData, $this->headers['success']);
+    }
+
+    public function delete() {
+        try {
+            $data = $this->post();
+            if (!isset($data['type']) || !isset($data['id'])) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'missing body/ type/ chapter/ name'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            if (!($data['type'] == "lessons" || $data['type'] == 'questions')) {
+                $this->responseData = json_encode(array(
+                    'status' => 'error',
+                    'body' => 'type must be lessons or questions'
+                ));
+                $this->send_output($this->responseData, $this->headers['error']);
+                return;
+            }
+
+            $this->model->delete_lesson($data['type'], $data['id']);
+            $this->responseData = json_encode(array(
+                'status' => 'success',
+                'body' => $data['type'] . ' '. $data['id'] . ' ' . ' successfully deleted'
+            ));
+        } catch (Exception $e) {
+            $this->error['message'] = $e->getMessage();
+            $this->error['header'] = $this->headers['error'];
+            $this->responseData = json_encode(array(
+                'status' => 'error',
+                'body' => $this->error['message']
+            ));
+            $this->send_output($this->responseData, $this->headers['error']);
+            return;
         }
         $this->send_output($this->responseData, $this->headers['success']);
     }

@@ -1,5 +1,6 @@
 <?php
 require_once UTILS . DS . "Response.php";
+
 class BaseController
 {
     protected $model;
@@ -44,6 +45,16 @@ class BaseController
             $result[$key] = $value;
         }
         return $result;
+    }
+
+    protected function validate_key(): bool
+    {
+        $headers = apache_request_headers();
+        foreach ($headers as $header => $value) {
+            if ($header == "x-api-key" && $value == "apikey")
+                return true;
+        }
+        return false;
     }
 
 
