@@ -55,12 +55,19 @@ Router::post('/application/signup', function () {
     require_once $url;
 });
 
+// use only for GET method
 Router::get('/application/list?type={var_type}&id={var_id}', function () {
     $controller = new MyController();
     $controller->request();
 });
 
+// use only for GET method
 Router::get('/application/list?type={var_type}', function () {
+    $controller = new MyController();
+    $controller->request();
+});
+
+Router::post('/application/request', function () {
     $controller = new MyController();
     $controller->request();
 });
