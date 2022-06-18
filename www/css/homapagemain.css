@@ -2,7 +2,8 @@
 @import "navbar.css";
 @import "footer.css";
 
-body {
+body 
+{
   text-decoration: none;
   color: white;
   background: var(--dark-primary);
@@ -11,75 +12,135 @@ body {
   font-family: var(--font-primary);
 }
 
-a {
+a 
+{
   text-decoration: none;
-  color: var(--dark-secondary);
+  color: var(--dark-primary);
   cursor: pointer;
 }
 
-.hero {
+.hero 
+{
+  background: url('/www/images/background.jpg') top/cover;
+  padding: 11.5rem;
+  border: 1px solid var(--dark-secondary);
+  -webkit-mask:
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+mask:
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
+  radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
+-webkit-mask-size:33.4% 140%; 
+-webkit-mask-repeat:no-repeat;
+mask-size:33.4% 140%;
+mask-repeat:no-repeat;
   text-align: center;
-  margin-top: 9em;
+  /*margin-top: 9em;*/
 }
+.hero-text 
+{
+margin-top: -10rem;
 
-.hero .title {
+}
+.hero .title 
+{
+  text-shadow: 0 0 8px black;
+  padding-top: 0rem;
+  margin-top: -5rem;
   font-weight: bold;
   font-size: 2.5em;
   margin-bottom: -0.5em;
 }
 
-.hero .title span {
+.hero .title span
+{
+  text-shadow: 0 0 13px black;
   color: var(--dark-secondary);
 }
 
-.hero .description {
-  color: rgba(255, 255, 255, 0.4);
+.hero .description
+{
+  text-shadow: 0 0 20px black;
+  color: white;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
+}
+.hero .description p
+{
+  color: white;
+}
+.hero .description p2
+{
+  padding: 0.16em;
+  text-shadow: 0 0 4px black;
+  color: var(--dark-secondary);
+  font-weight: bold;
+}
+.hero .description p2:hover
+{
+  border-radius: 1em;
+  text-shadow: none;
+  background-color: var(--dark-secondary);
+  color: var(--dark-primary);
 }
 
-.hero .container {
+.hero .container
+{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10rem;
 }
 
-.hero .container .primary-cta {
-  border: 4px solid var(--dark-secondary);
+.hero .container .primary-cta 
+{
+  background-color: var(--dark-secondary);
+  border: 2px solid var(--dark-primary);
   font-weight: bold;
   font-size: 1.75em;
   padding: 0.35em 1.30em;
   margin: 0.5em;
 }
 
-.hero .container .primary-cta:hover {
-  background: var(--dark-secondary);
+.hero .container .primary-cta:hover 
+{
+  border: 2px solid var(--dark-secondary);
+  background: var(--dark-primary);
 }
 
-.hero .container .primary-cta:hover a {
-  color: var(--dark-primary);
+.hero .container .primary-cta:hover a 
+{
+  color: var(--dark-secondary);
 }
 
-.hero .container .secondary-cta {
-  border: 4px solid var(--dark-secondary);
+.hero .container .secondary-cta 
+{
+  background-color: var(--dark-secondary);
+  border: 2px solid var(--dark-primary);
   font-weight: bold;
   font-size: 1.75em;
   padding: 0.35em 1.30em;
   margin: 0.5em;
 }
 
-.hero .container .secondary-cta:hover {
-  background: var(--dark-secondary);
+.hero .container .secondary-cta:hover 
+{
+  border: 2px solid var(--dark-secondary);
+  background: var(--dark-primary);
 }
 
-.hero .container .secondary-cta:hover a {
-  color: var(--dark-primary);
+.hero .container .secondary-cta:hover a 
+{
+  color: var(--dark-secondary);
 }
 
-.bottompage {
+.bottompage 
+{
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -93,24 +154,29 @@ a {
   margin: 0;
 }
 
-.bottompage img {
+.bottompage img 
+{
   width: 30px;
 }
 
-.bottompage .leftcorner {
+.bottompage .leftcorner 
+{
   margin-top: 16px;
   padding-left: 5em;
 }
 
-.bottompage .leftcorner .facebook-cta {
+.bottompage .leftcorner .facebook-cta 
+{
   padding-right: 0.65em;
 }
 
-.bottompage .leftcorner .linkedin-cta {
+.bottompage .leftcorner .linkedin-cta 
+{
   padding-left: 0.65em;
 }
 
-.bottompage .rigthcorner {
+.bottompage .rigthcorner 
+{
   padding-right: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +185,8 @@ a {
   font-weight: bold;
 }
 
-.bottompage .rigthcorner img {
+.bottompage .rigthcorner img 
+{
   padding-left: -1em;
   padding-right: 1em;
 }
