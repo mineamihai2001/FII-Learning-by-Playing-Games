@@ -167,7 +167,7 @@
         <section id="structure_home" role="doc-pagelist">
           <h3>2.1 Home</h3>
           <p>
-            The <a href="./application/views/html/homepage.html">Homepage</a>
+            The <a href="\application\views\html\homepage.html">Homepage</a>
           </p>
           <p>The Homepage is the landing page of every user, new or not. 
             It has 3 main components, the navigation bar, the main page / hero section and the footer.
@@ -181,7 +181,7 @@
         <section id="structure_login" role="doc-pagelist">
           <h3>2.2 Login/Sign-up</h3>
           <p>
-            <a href="./application/views/html/login.html">Login</a>
+            <a href="\application\views\html\login.html">Login</a>
           </p>
           <p>
             The login/sign-up pages are the most important pages on our website.
@@ -200,7 +200,7 @@
         <section id="structure_lesson" role="doc-pagelist">
           <h3>2.3 Lesson</h3>
           <p>
-            <a href="./application/views/html/lesson.html">Lesson</a>
+            <a href="\application\views\html\lesson.html">Lesson</a>
           </p>
           <p> 
             Lesson page has as well the navigation bar, like we said previously about Account Page (that helps you to go to home page/learn page/about page/account page). 
@@ -213,21 +213,20 @@
         <section id="structure_admin" role="doc-pagelist">
           <h3>2.4 Admin Console</h3>
           <p>
-            <a href="./application/views/html/index.html">Admin</a>
+            <a href="\application\views\html\AdminConsole.html">Admin</a>
           </p>
           <p>
-            Admin console is a page only admins of our site can use. 
-            The purpose of this page is to add lessons and quizzes with ease. 
-            On top we can choose a chapter and on the left side of the page, we can see 2 columns, one with sub-lessons and another one with questions. 
-            By drag and drop or simply writing the sub-lesson id (or question id) we can add it to our chapter and of course we can type the name of the lesson as well (or of the quiz). 
-            We also can see the Admin Console page's name with the icon.
-            Using this page can make the life of our admins better by spending less time adding lessons and quizzes.
+            Admin console is designed in a way to ease our job, any admin's job to be exact. 
+            Instead of introducing new lessons or quizzes in database everytime we want to add something we can simply use the admin console to write and create new lessons and quizzes. 
+            As you could tell, it's pretty easy to use our page, you simply choose the name you want your lesson to have by giving an input to the text box and you select how many sub-lessons you want your lesson to have by either drag and dropping or just introducing the sub-lesson's id and of course choosing the chapter as well.
+            The quizz part is pretty identical, you give as input the name of the quizz and you add questions by drag and dropping them or just by adding their id.
+            In case you ever forget what this page is meant for or what is it's name you simply can check the top-middle side of our page and you ll see the "Admin CONSOLE" name with a little icon near it.
             </p>
         </section>
         <section id="structure_accountpage" role="doc-pagelist">
           <h3>2.5 Account</h3>
           <p>
-            <a href="./application/views/html/account.html">Account</a>
+            <a href="\application\views\html\account.html">Account</a>
           </p>
           <p>
             Account page is a page where you can see some details about your account on our website while also being able to use the navigation bar to go to about page or learn page or home page.
@@ -239,7 +238,7 @@
         <section id="structure_aboutpage" role="doc-pagelist">
           <h3>2.6 About</h3>
           <p>
-            <a href="./application/views/html/aboutpage.html">About</a>
+            <a href="\application\views\html\aboutpage.html">About</a>
           </p>
           <p>
             The about page is where the user comes when he wants more information than that shown on the homepage.
@@ -251,7 +250,56 @@
           </p>
         </section>
       </section>
-
+    <section id="references" role="doc-pagelist">
+      <h2>3. References</h2>
+      <section id="libraries" role="doc-pagelist">
+        <h2>
+          3.1 Libraries
+        </h2>
+        <p>
+          For the creation of this website, we used a few libraries:
+        </p>
+        <h3>Tabulator</h3>
+          <a href="http://tabulator.info/docs/5.2/theme#standard">http://tabulator.info/docs/5.2/theme#standard
+          </a>
+        <p>
+        This is the library used to create tables, we created tables on the <a href="\application\views\html\account.html">account</a> page.
+        </p>
+        <h3>JS-Cookie</h3>
+          <a href="https://github.com/js-cookie/js-cookie">https://github.com/js-cookie/js-cookie
+          </a>
+        <p>
+          We used this library so we can keep the user logged-in and so he doesn't have to go again through the lessons to get to his current one.
+        </p>
+        <h3>Tabulator</h3>
+          <a href="http://tabulator.info/docs/5.2/theme#standard">http://tabulator.info/docs/5.2/theme#standard
+          </a>
+        <p>
+        This is the library used to create tables, we created tables on the <a href="\application\views\html\account.html">account</a> page.
+      </section>
+      <section id="otherreferences" role="doc-pagelist">
+        <h2>
+          3.2 Other used tools
+        </h2>
+        <h3>Font Awesome</h3>
+          <a href="https://fontawesome.com/">https://fontawesome.com/
+          </a>
+        <p>
+          With this tool we got a part of our awesome icon on our website.
+        </p>
+        <h3>Googles API</h3>
+          <a href="https://developers.google.com/identity/sign-in/web/sign-in">https://developers.google.com/identity/sign-in/web/sign-in
+          </a>
+        <p>
+          This is a really important link because this made possible the login with Google options on our <a href="\application\views\html\login.html">login/signup</a> page. Thanks Google, really cool!
+        </p>
+        <h3>Scholarly HTML</h3>
+          <a href="https://github.com/w3c/scholarly-html">https://github.com/w3c/scholarly-html
+          </a>
+        <p>
+        This is the main template for our documentation. We also used the same CSS as them.
+      </section>
+    </section>
     </article>
   </body>
 </html>
