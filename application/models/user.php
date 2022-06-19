@@ -14,6 +14,7 @@ class User extends BaseModel
     {
         parent::__construct();
         $this->data = $data;
+        $this->image = "";
     }
 
     /**

@@ -18,12 +18,11 @@
 
       <div class="description">
         <p>
-          <p2>InnovateLearning</p2> 
+          <p2>LearnTheComputer</p2> 
           is a learning based game for you <br />
           to use and lay the foundations of computers
         </p>
       </div>
-
       <div class="container">
         <div class="primary-cta">
           <a href="#" class="getstarted-cta">Get Started</a>

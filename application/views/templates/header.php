@@ -9,7 +9,7 @@ if ($page) { ?>
         <!-- STYLES -->
         <link rel="stylesheet" href="/www/css/index.css" />
         <link rel="stylesheet" href=<?php echo $page["style"] ?> />
-
+        <link rel="icon" href="/www/images/logo.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

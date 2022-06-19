@@ -12,7 +12,7 @@
                 </div>
                 <div class="content">
                     <h3>
-                      Innovate Learning
+                      LearnTheComputer
                     </h3>
                     <p>
                       This website is our take of learning the PC components by using games and simple to process information with a well structured learning pattern so the information is as easy as possible to understand and remember.

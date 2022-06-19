@@ -67,6 +67,7 @@ Router::get('/application/list?type={var_type}', function () {
     $controller->request();
 });
 
+// use for POST/PUT/DELETE
 Router::post('/application/request', function () {
     $controller = new MyController();
     $controller->request();
@@ -139,6 +140,24 @@ Router::post('/application/account', function() {
     if (isset($_SESSION['username'])) {
         $url = VIEWS . DS . "account.php";
         require_once $url;
+    } else {
+        Router::redirect("/application/account");
+    }
+});
+
+Router::post('/application/leaderboards', function() {
+    if (isset($_SESSION['username'])) {
+        $account = new Account();
+        $account->leaderboards();
+    } else {
+        Router::redirect("/application/account");
+    }
+});
+
+Router::post('/application/account_details', function() {
+    if (isset($_SESSION['username'])) {
+        $account = new Account();
+        $account->account_details();
     } else {
         Router::redirect("/application/account");
     }
