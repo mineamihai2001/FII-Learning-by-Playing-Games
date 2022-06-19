@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +8,16 @@
     <link rel="stylesheet"
           href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <title>Scholarly</title>
   </head>
 
   <body>
     <article>
       <header>
         <h1>Learning by playing games</h1>
-        <h3>
+        <h3 class="website">
           <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"
-            target="_blank">Check our site here!</a
+            >LearnTheComputer - Check our site here!</a
           >
         </h3>
         <section typeof="sa:AuthorsList">
@@ -100,10 +100,11 @@
             </li>
           </ul>
         </section>
-
+        <h1>Table of Contents</h1>
+        <div class="tableofcontents">
         <ol role="directory">
           <li>
-            <a href="#introduction">1. Introduction</a>
+            <a href="#introduction"><b>1. Introduction</b></a>
             <ol role="introduction-directory">
               <li><a href="#introduction__purpose">1.1 Purpose</a></li>
               <li>
@@ -115,17 +116,42 @@
             </ol>
           </li>
           <li>
-            <a href="#structure">2. Structure</a>
+            <a href="#General-structure"><b>2. Structure</b></a>
+            
+            <ol role="General-structure-directory">
+              <li><a href="#General-structure_uml">2.1 UML</a></li>
+              <li><a href="#General-structure_flow">2.2 Flow</a></li>
+              <li><a href="#General-structure_screenshot">2.3 Screenshot</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#structure"><b>3. Page Structure</b></a>
             
             <ol role="structure-directory">
-              <li><a href="#structure_home">Home Page</a></li>
-              <li><a href="#structure_login">Login Page</a></li>
-              <li><a href="#structure_signup">Sign-up Page</a></li>
-              <li><a href="#structure_lesson">Lesson Page</a></li>
-              <li><a href="#structure_admin">Admin Console</a></li>
+              <li><a href="#structure_home">3.1 Home Page</a></li>
+              <li><a href="#structure_login">3.2 Login/Sign-up Page</a></li>
+              <li><a href="#structure_lesson">3.3 Lesson Page</a></li>
+              <li><a href="#structure_admin">3.4 Admin Console</a></li>
+              <li><a href="#structure_accountpage">3.5 Acount Console</a></li>
+              <li><a href="#structure_aboutpage">3.6 About Console</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#APIstructure"><b>4. Open API documentation</b></a>
+            
+            <ol role="APIstructure-directory">
+            </ol>
+          </li>
+          <li>
+            <a href="#refstructure"><b>5. Page Structure</b></a>
+            
+            <ol role="refstructure-directory">
+              <li><a href="#refstructure_libraries">5.1 Libraries Used</a></li>
+              <li><a href="#refstructure_other">5.2 Other used tools</a></li>
             </ol>
           </li>
         </ol>
+      </div>
       </header>
       <section id="introduction" role="doc-introduction">
         <h2>1. Introduction</h2>
@@ -162,12 +188,12 @@
         </section>
       </section>
 
-      <section id="structure" role="doc-pagelist">
-        <h2>2.Structure</h2>
-        <section id="general-structure" role="doc-pagelist">
-          <h3>2.1 General Structure</h3>
+      <section id="General-structure" role="doc-pagelist">
+        <h2>2. General Structure</h2>
+        <section id="General-structure_uml" role="doc-pagelist">
+          <h3>2.1 UML Structure</h3>
           <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;page&quot;:0,&quot;toolbar&quot;:&quot;pages zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2022-06-19T13:54:18.575Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.70\&quot; version=\&quot;20.0.1\&quot; etag=\&quot;h-X6Rajntb2XTCABLT8s\&quot; type=\&quot;device\&quot; pages=\&quot;7\&quot;&gt;&lt;diagram id=\&quot;ZHfi_2Dll_z-cyNt0Jx7\&quot; name=\&quot;MVC\&quot;&gt;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&lt;/diagram&gt;&lt;diagram id=\&quot;sRaeDRWQ1bOLkYBKxYm1\&quot; name=\&quot;Controllers\&quot;&gt;7Vvfb+I4EP5rkHoPrPKDBHgs0F4ftlJ11ep2nyKTmGDViVPH6cL+9TdO7IRASujuoRKUShXxZGyPx/N9HtswsOfR5m+OkvUjCzAdWEawGdiLgWWZruPCh5RslcRwjUISchIoWSV4Jr+wVlTSjAQ4rSkKxqggSV3oszjGvqjJEOfsZ11txWi91wSFqkejEjz7iOIDtX9JINaFdOLsaD9gEq51z6ah3iyR/xJylsWqv5jFuHgTId2MUk3XKGA/d0T23cCec8ZE8RRt5phKv2qPFfXu33lbmsxxLE6p8PzPejb+9bT4uiEPs/TbK1l9Hw5VK2+IZsoVA8ul0N4skSaLrfKQ+5pJO2cR4iGJB/atkWzK4lCwBESjXCTwRgwRJaHU8sE2zEFatQBPofrM+1lqwa3vgx+FlsNAlvu6IEv2ZWsuDdURpXsxdzu836/TNjZ4rf+LQVES4+FaRcCt+cV9Z0iG50GIpoJnvrj5C1QHclK6YjwqZqDAd832Ja8ZYmQp5p4MrE4O0AuwQISm+zO0P0qKUYD5kiEeHOjWB2vVTLbeMBcE2OW2gMEix8dMgWJB8UrWYqC1ojkjrAgg1Z6tWCwUN5ojVb5HEaGSVh8wfcOyVelVEVGpBI8592AJcQNKJcfIgs8i4qtnipaYzkqymjPKAJaLnK6gmuDspWQ+sxySHAfevMs3ZslisDJgFmHBt6CiKtjOuKiiFoWRqVaJnxXDmta0kK132XUyUsyuWD0s267oDR4Uw32A7azLYbsZSvEc5pczSqFOT3qfZfw6B3l6nAmidkrEkIbw4yoJS8Ut513zUIrjwGOZSDJxEyCBBtZc+k2I5KHwXQuNplh4cuhtdAthhCi9iVGEiy7A9iwCTLV1AHgmYBj2XvC2rZNTDAnB4IwTL8Vh3v0p+q8Z5lsPQEDi0AOSRFG/ZHx4yRi6bm3JGJrOwZJR5tO7S4ZtO2daMuzLWTK+4jRlcb9UfJrxNJ+A602PY4hMrxjkKZTXrNmzXBvLWZrVtrpsHibGZlNi7EzPxHKjC2I5JlvuSe6zjM8zvFZ269qoUEI8KiOrjdiQLwiLT9OVJCjdlWfFPQ1+NNkb1VjQdu0GFrQOWdAyxmdiQeeiWBB2XD0NfuJRoeYBmIc+x/kouJ1R/fDPnhoN6B435Dj6ZuV/R7d7Oeh+3PZHfxdgfH5m85Sf1Rxf6DkG1VQ8YrFmwXFV8MWdPAlc4NRvazRNwHd4cZBwXb7nlEPaEqSIBWTVeiQH22kscGtiFgSt9zXk0KSeqlvvaab1RGx8eOZm2nZDHuae68xtfDlM/QxVviU9R/fb0XNklylEV5b028xz0ps5turX0FbTadukIRMdn+u0bdLAb3tT1+haWcJBiJ+VHuOQj4QsRvSuks4ClK6rmRCIyzvHfDaUm3EcaMmSMv+lEOkZt8qJ0LMzsGwD/ibyDd4Q8V22/cUxDFX+kZeNsrzYqM7zwlYXIOHdyqqmVpWCH7ttSUFVOS/p2oWD5OCPhwE4kWXcx0e8r79fBjDG4oie1RxWO2Gjvx62GzVaxjFFgrzVzW2KpLwHmA+03VFIGIlFumPAkxRUQV0Gsd5eTaa7UXmgb06cP9I31f1aFfWFxRUGSg/9Piym1wALYw8WTldgYV8BLPbD1prYlxfm+juvXY5z8yDOwXfdiPPRFca5Pb1AOte3ml2O8w6nOc4VxLlr7MW5Mzka544Osd/Vv4Y0St+ZXRPuzO7gzr0C3I3cve1Fj7sTcNf0VcGO465D6934CnBn2Z3a1kOx+vlaoV79PtC++w8=&lt;/diagram&gt;&lt;diagram id=\&quot;LkqyLAW1771Gt4HVb7ML\&quot; name=\&quot;Models\&quot;&gt;7Vrfb6M4EP5rkHIPWYEhJH3Mj3b3YVd7UnW63Sfk4AmxajA1pk3urz8bDISEhvR0VZMolargYWY8M/78jQmx3Hm8+Spwuv7BCTAL2WRjuQsLIWeM7tSHlmyNZOSjUhIJSoysETzSf8AIbSPNKYGspSg5Z5KmbWHIkwRC2ZJhIfhrW23FWXvWFEdwIHgMMTuU/k2JXJfSychu5N+ARutqZsc2d2JcKRtBtsaEv+6I3HvLnQvOZXkVb+bAdPWqupR2D2/crQMTkMhTDGL68yuKRiS/i0ngZ78W9s/vQ+PlBbPcJGwhnyl/s1SHLLemDv5zruOcxVhENLHcqZ1u6uFQ8lSJvEIkYSOHmNFIa4UqNhBK2nhQV5H5LOZZVoJpGPI8kQZD5U2VzXLfQMnSfdla6Ggr8FRTObuzPuzb9CWoblf/ZWaMJjBcm8WeOl/8N/Kyg0ChMZMiD+XgD6Vq6ZW5lOAjkEEqeCQgywZ5BiKgZC+JpWhFVJgwwATEkmNBsuNJo1bo6AWEpGq/TUvILAoszQyAFgxW2oorrRUrds+KKlS7sxVPpGELxzPjBxxTponmG7AX0F51dWXMtJK6FApfBPR2sNWo3o96EPKYhuaa4SWwGQ6fosJgzhlXEF4kPAFtJgV/qrnAqVPSecDmzb3p1DtecSXwGKTYKhVjMDKkaFjSHZvxa0M5jjcpZesW3RghNjQX1a4bJlAXhgzeQQzofIhhhjO4scLnBk+Wlxbxcw5iO8ie2Y2M3klGju+32MgZ24dsVJ3PWmzkuh/ERu75sNF31Rd5cmV81N3nzz8HE/elha0PTIkCoDo1aTDtt4P981WeEiwhyCSW+cHhquswFuZCb/YT3WuLbt83ruzjSuS77ZOb38GVHjrkyvoB93/nSu98uPLH9sp48uIIUhEHPr771Tkpk1RlGBSP33ppj6mXlPKG8vnXIxVU8aKuSh8rYkKCqjYDuU3BQvOdcgVYCLw9jbgNDTdO1P4tPpec9LlQ2we6XZzSB8pFOqUBFCV5h3tdnoOgdD7lVbjGqYZHMUhwDD3usibaWxd6dxdy3UmrCw0d76ALIa/jxO663gd1odH5dKG/Mg3Ea2lBeqNeXBuicfE1+zEGSHGWvXJBeuiwt591PhJ0KRW01auluevSqo1TGjCu3JxC/KZegyrZHpNQgGppfY47Z7/xeB+PD/e+eUGTw4eJsdPxMHGHPojG/Q4a31u5zsrqEZAIHo0eF3LNI55gdt9IZwRn62YhJBZyql/ZNVWGhFSSJePhUymqFhzV61AtjoVcW/1N9B3YUPlL+/4ysm0z/l2M7Xq82JjJi8G2GiSqdC1TLdC2TmWrBY1xMaqsywLp5I+jQBWR5yKEI9WvXngqTgB5RA91o2oHNqOO5l/JBDAs6Us73C4kFTNM9bl3RyHl6kSd7QTwpxY0mHZQG9Oui9qvKff06wi69dVFGUGD6Trj/w7z8Q3mnwhz9wpgXp+kzxnmk+uDuXM5MPeuAObeaHL+ML+7wfwTYT66AphXv9n6HJSrYfOzsFK9+XWde/8v&lt;/diagram&gt;&lt;diagram id=\&quot;cTCGv8dF_Q2lYC1pRxna\&quot; name=\&quot;Views\&quot;&gt;zZZNU4MwEEB/DUdmCCm0Hm1ti0pPHPQaIZKMwDIhCPjrDRJKKXZGD1pOwNvdJLwsHwbepPVekJwdIKKJYVtRbeA7w7aRhRfq0JKmI85Cg1jwSCcNIOAftK/UtOQRLUaJEiCRPB/DELKMhnLEiBBQjdNeIRnPmpOYTkAQkmRKn3gkWUdXjjVwj/KY9TMjS0dS0idrUDASQXWC8NbAGwEgu7O03tCkldd76ep2F6LHhQmayZ8UuPVDkHkrL3du/KZZC4f4tYm7Ud5JUuob9iHmmV6xbHoNAsosou1IyMDrinFJg5yEbbRSG68Yk2miw8UblSHTF3oCKiStL64cHX2oRqKQUikalaILsOt0JbqHUG+/GnYE9ZrZyW64mhHdBPFx6MGTOtGqfqFtMdVGiwJm5g0trZl5cybebl+glPPSdt5u9uLa2pZTbWGoFM1M3Hm//au4Z1bvTBfwvR/s8tw5PO4BTDQRF/A4M+f2gnPsKz6o34qzJ+I8NfK8rf1lu6nL4Uv9FTv538HbTw==&lt;/diagram&gt;&lt;diagram id=\&quot;nVZZslMdf4QdJ1DWzmqR\&quot; name=\&quot;Database\&quot;&gt;1VRNc5swEP01zKQHZxBQ2h6NsZOZNjNtc8gxI8MCmggtkWUb59dXggWMM0577cF492k/pd3nhau6vdO8qR4wB+kFft56YeoFwdcv3+zXAaceiOKgB0ot8h5iE/Ao3oBAn9C9yGE3MzSI0ohmDmaoFGRmhnGt8Tg3K1DOsza8hHfAY8ble/RJ5Kaitj77E34PoqyGzMynk5oPxgTsKp7j8QwK11640oiml+p2BdLd3XAvvd/myulYmAZl/sXhsHu+ezs+rH+vf8avP77/Eoo/LSjKgcs9NewFsbTxksaVbE50D/Hr3tWZ1FyXQnnh0m/aUV0YbCwUdZCB1iy4FKWzymxtoC06RbBSSf9dnu0ApNzwLd/BcGA72V4aW6y5xCrtKh0GZ0jDzjNuLn3+1pw9Hn59V1IoWFT00Et2G1/pqZtDa+G5x/hfai7BPNP+CFQ3nz6qP5hVERxAG2G3Zdk/eNpNQkLPn0oonBdaq0J2s18IO5NhUqAytOssIn3DayEdS9yDPICL6i7K1NIZWVHjXuXghtm32rhNTsmwFhnJkm9BJjx7KTuHFUq0A5gqVODcjMaXcZPZ2JLrA9qrm8XGfbU8B1iD0SdrQg5RRCtOHMdC0o8TY7CIeK+aswUxFbFUOcaeFtkKtMuDOnFGd3ZGvOH6Dw==&lt;/diagram&gt;&lt;diagram id=\&quot;pb62y7WYm_1sWlly0gNN\&quot; name=\&quot;Router\&quot;&gt;zVVNj5swEP01SOkhFR8JbY9ANruXlaqu1Kq9rBwYwFpjU8ckpL++YxggZJtmj3tI4nl+Y8+zPS9OkFTtvWZ1+agyEI7vZq0TbBzf//zpC35b4NQDq9DvgULzrIe8CXjif4BAl9CGZ7CfEY1SwvB6DqZKSkjNDGNaq+Oclisx37VmBbwCnlImXqM/eGZKkrV2J/wBeFEOO3suzVRsIBOwL1mmjmdQcOcEiVbK9KOqTUDYsxvOpc/bXpkdC9MgzVsStPnuxixKm6+aP/5sIat/5Uta5cBEQ4IdPxS4Xlzbks2JziH83dg644rpgksniNy6HcOlUTVCqw4y0JolE7ywrBRrA43otAKOCvrt9tkNwDfVWC7BqGN3SUWsvsRKbescns2wiXe+3/Yy55Y0nB4+vSbBJSxLuubI+xheUeRqqwFfXOTYyyCBelaCW4B5/hfv/avDyhe1fdZ+YjuOCbFj6cuH/8vVjVzcokDGNTbvotHiBrVW+zfUMD9Kf3Yg/gG04ZgY9W900z3emF7sRkBusxSyctG1a86xjYI4V9KQPXkrires4sIa2wOIA9hV7Z2ZSlgSDvGaZQa2/1yMRgOwQaoqntJYsB2IGGUUXUKihMKe2UglwaYZrV5G8/FGSVYHtFfNwBstBq0ZVAVGn5BCCUFIrnQafauPj5PJeeuwx8pzgwvXZK5krMW49uQ9OCD7GcLJ5rq5s/+K4O4v&lt;/diagram&gt;&lt;diagram id=\&quot;I--uatfmSCezHXmAdMAE\&quot; name=\&quot;Index\&quot;&gt;jZJNc4MgEIZ/Dcd0VJq0uTZJ2xx68tAzlY0wQWEQxeTXF+uicTKZ6YXZffYDeHcJ3VX9h2VGfGkOimQJ7wndkyx7fdmGcwCXETxvshGUVvIRpTPI5RUQJkhbyaFZJDqtlZNmCQtd11C4BWPWar9MO2m1vNWwEu5AXjB1T78ldwK/tU5m/gmyFPHmNMFIxWIygkYwrv0NogdCd1ZrN1pVvwM1aBd1GeveH0Snh1mo3X8Kuq0/Kzhe1yu/+jH5aU/bboVdOqZa/PCx5tA/GWHw1e4SpbC6DbGhW0LomxfSQW5YMUR9mH1gwlUqeGkwmzO4QqCDl4B10D98fTppEnYJdAXOXkIKFtANyoh7NC2In6eSRqnFzURiHcNFKKfWs1bBQLmiO4/lL3az2/TwCw==&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-          <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js">
+          <script  src="https://viewer.diagrams.net/js/viewer-static.min.js">
           </script>
           <p>
             We made a UML diagram for the whole app.
@@ -179,16 +205,20 @@
             You can also see every component of the diagram on their own if you click next on the diagram.
           </p>
         </section>
-        <section id="flowDiagram" role="doc-pagelist">
-          <h3>2.1 Flow Diagram</h3>
-          <img src="FlowDiagram.svg">
+        <section id="General-structure_flow" role="doc-pagelist">
+          <h3>2.2 Flow Diagram</h3>
+          <img src="FlowDiagram.svg" alt="flowdiagrama">
         </section>
-        <section id="screenshotDiagram" role="doc-pagelist">
-          <h3>2.2 Screenshot Diagram</h3>
-          <img src="ScreenshotDiagram.svg">
+        <section id="General-structure_screenshot" role="doc-pagelist">
+          <h3>2.3 Screenshot Diagram</h3>
+          <img src="ScreenshotDiagram.svg" alt="screenshotdiagrama">
         </section>
+      </section>
+
+      <section id="structure" role="doc-pagelist">
+        <h2>3. Page Structure</h2>
         <section id="structure_home" role="doc-pagelist">
-          <h3>2.1 Home</h3>
+          <h3>3.1 Home</h3>
           <p>
             The <a href="\application\views\html\homepage.html">Homepage</a>
           </p>
@@ -202,7 +232,7 @@
             And at last the responsive part, the page is responsive in at least 3 resolutions, laptops, tablets and phones.</p>
         </section>
         <section id="structure_login" role="doc-pagelist">
-          <h3>2.2 Login/Sign-up</h3>
+          <h3>3.2 Login/Sign-up</h3>
           <p>
             <a href="\application\views\html\login.html">Login</a>
           </p>
@@ -221,7 +251,7 @@
           </p>
         </section>
         <section id="structure_lesson" role="doc-pagelist">
-          <h3>2.3 Lesson</h3>
+          <h3>3.3 Lesson</h3>
           <p>
             <a href="\application\views\html\lesson.html">Lesson</a>
           </p>
@@ -235,7 +265,7 @@
           </p>
         </section>
         <section id="structure_admin" role="doc-pagelist">
-          <h3>2.4 Admin Console</h3>
+          <h3>3.4 Admin Console</h3>
           <p>
             <a href="\application\views\html\AdminConsole.html">Admin</a>
           </p>
@@ -248,7 +278,7 @@
             </p>
         </section>
         <section id="structure_accountpage" role="doc-pagelist">
-          <h3>2.5 Account</h3>
+          <h3>3.5 Account</h3>
           <p>
             <a href="\application\views\html\account.html">Account</a>
           </p>
@@ -262,7 +292,7 @@
           </p>
         </section>
         <section id="structure_aboutpage" role="doc-pagelist">
-          <h3>2.6 About</h3>
+          <h3>3.6 About</h3>
           <p>
             <a href="\application\views\html\aboutpage.html">About</a>
           </p>
@@ -276,8 +306,8 @@
           </p>
         </section>
       </section>
-      <section id="api" role="open-api-documentation">
-        <h2>3. Open API documentation</h2>
+      <section id="APIstructure" role="open-api-documentation">
+        <h2>4. Open API documentation</h2>
         <div style="font-family: Consolas,serif;">
           <a href="./openapi.yaml">Click here to download the yaml file of the Open API document</a>
         </div>
@@ -492,13 +522,13 @@ components:
       in: header
         </code></pre>
         <p>Here is a preview of the document from the <a href="https://editor.swagger.io/">Swagger</a> page.</p>
-        <img src="/www/images/openeapi-1.png" style="width: 60rem;"/>
+        <img src="/www/images/openeapi-1.png" style="width: 60rem;" alt="openapiimg"/>
       </section>
-      <section id="references" role="doc-pagelist">
-      <h2>4. References</h2>
-      <section id="libraries" role="doc-pagelist">
+      <section id="refstructure" role="doc-pagelist">
+      <h2>5. References</h2>
+      <section id="refstructure_libraries" role="doc-pagelist">
         <h2>
-          4.1 Libraries
+          5.1 Libraries Used
         </h2>
         <p>
           For the creation of this website, we used a few libraries:
@@ -516,9 +546,9 @@ components:
           We used this library so we can keep the user logged-in and so he doesn't have to go again through the lessons to get to his current one.
         </p>
       </section>
-      <section id="otherreferences" role="doc-pagelist">
+      <section id="refstructure_other" role="doc-pagelist">
         <h2>
-          4.2 Other used tools
+          5.2 Other used tools
         </h2>
         <h3>Font Awesome</h3>
           <a href="https://fontawesome.com/">https://fontawesome.com/
