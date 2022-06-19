@@ -22,13 +22,12 @@
                       We aimed to save the progress of every user in the learning process based on different difficulty levels.
                       We also wanted to generate a leaderboard of the best users.
                       We hope that we managed to get pretty close to our goals, but the website can still get some further development when we get better.
-                      Thanks for using our website and for any questions the user can contact us with the details given in the documentation link bellow.
                     </p>
+                     <p1> 
+                      Thanks for using our website and for any questions the user can contact us with the details given in the <p2>documentation</p2> link bellow.
+                      </p1>
                     <div class="button">
-                        <a href="\docs\scholarly.html"> >>> Documentation here <<< </a>
-                    </div>
-                    <div class="button">
-                        <a href="\docs\openapi.yaml"> >>> Open API docs <<< </a>
+                        <a href="\docs\scholarly.html">Documentation here</a>
                     </div>
                 </div>
                 <div class="social">
