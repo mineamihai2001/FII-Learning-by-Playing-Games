@@ -27,6 +27,9 @@
                     <div class="button">
                         <a href="\docs\scholarly.html"> >>> Documentation here <<< </a>
                     </div>
+                    <div class="button">
+                        <a href="\docs\openapi.yaml"> >>> Open API docs <<< </a>
+                    </div>
                 </div>
                 <div class="social">
                     <a href=""><i class="fab fa-facebook-f"></i></a>

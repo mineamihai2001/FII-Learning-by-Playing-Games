@@ -1,0 +1,204 @@
+openapi: 3.0.1
+info:
+  title: LearnTheComputer
+  description: This is a brief description of the available request methods for the
+    LearnTheComputer API.
+  termsOfService: https://learnthecomputer.infinityfreeapp.com/about
+  contact:
+    email: ioan.minea@info.uaic.ro
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://learnthecomputer.infinityfreeapp.com/
+- url: http://learnthecomputer.infinityfreeapp.com/
+tags:
+- name: Lessons
+  description: Load/add lessons on the LearnTheComputer database.
+  externalDocs:
+    description: Find out more
+    url: http://swagger.io
+paths:
+  /add:
+    post:
+      tags:
+      - Lessons
+      summary: Add a new lesson for the app
+      operationId: addLesson
+      requestBody:
+        description: Lesson object that needs to be added in the app
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/postRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+
+  /update:
+    put:
+      tags:
+      - Lessons
+      summary: Update an existing lesson
+      operationId: updateLesson
+      requestBody:
+        description: Lesson object that needs to be modified
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/putRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+      x-codegen-request-body-name: body
+  /delete:
+    delete:
+      tags:
+      - Lessons
+      summary: Delete an existing lesson
+      operationId: deleteLesson
+      requestBody:
+        description: Lesson object that needs to be removed
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deleteRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+      x-codegen-request-body-name: body
+  /list:
+    get:
+      tags:
+      - Lessons
+      summary: 'List a lesson '
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+      - name: type
+        in: query
+        schema:
+          type: string
+      - name: id
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+components:
+  schemas:
+    postRequest:
+      required:
+      - body
+      - name
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+        chapeter:
+          type: integer
+          format: int64
+        name:
+          type: string
+        body:
+          type: string
+    putRequest:
+      required:
+      - body
+      - id
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+        id:
+          type: integer
+          format: int64
+        body:
+          type: string
+    deleteRequest:
+      required:
+      - id
+      - type
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        type:
+          type: string
+    SuccessApiResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "success"
+        body:
+          type: string
+    ErrorApiResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "error"
+        body:
+          type: string
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
