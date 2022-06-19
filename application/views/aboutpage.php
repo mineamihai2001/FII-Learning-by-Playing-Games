@@ -12,7 +12,7 @@
                 </div>
                 <div class="content">
                     <h3>
-                      Innovate Learning
+                      LearnTheComputer
                     </h3>
                     <p>
                       This website is our take of learning the PC components by using games and simple to process information with a well structured learning pattern so the information is as easy as possible to understand and remember.
@@ -25,7 +25,10 @@
                       Thanks for using our website and for any questions the user can contact us with the details given in the documentation link bellow.
                     </p>
                     <div class="button">
-                        <a href="\docs\scholarly.html"> >>>Documentation here<<< </a>
+                        <a href="\docs\scholarly.html"> >>> Documentation here <<< </a>
+                    </div>
+                    <div class="button">
+                        <a href="\docs\openapi.yaml"> >>> Open API docs <<< </a>
                     </div>
                 </div>
                 <div class="social">

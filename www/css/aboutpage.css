@@ -12,54 +12,64 @@
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
 }
-body{
+body
+{
     width: 100%;
     background: var(--dark-primary);
+    display: flex;
+    flex-direction: column;
 }
-.section{
-    border-top: 1px solid var(--dark-secondary);
-    border-right: 1px solid var(--dark-secondary);
-    border-left: 1px solid var(--dark-secondary);
+.section
+{
+    border: 1px solid var(--dark-secondary);
     width: 100%;
     min-height: 100vh;
 }
-.container{
+.container
+{
     width: 80%;
     display: block;
     margin: auto;
     padding-top: 100px;
 }
-.content-section{
+.content-section
+{
     float: left;
     width: 55%;
 }
-.image-section{
+.image-section
+{
     border: 1px solid var(--dark-secondary);
     float: right;
     width: 40%;
 }
-.image-section img{
+.image-section img
+{
     width: 100%;
     height: auto;
 }
-.content-section .title{
+.content-section .title
+{
     text-transform: uppercase;
     font-size: 28px;
     color: white;
 }
-.content-section .content h3{
+.content-section .content h3
+{
     margin-top: 20px;
     color: var(--dark-secondary);
     font-size: 21px;
 }
-.content-section .content p{
+.content-section .content p
+{
     margin-top: 10px;
     font-size: 17px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.4);
 }
 
-.content-section .content p1{
+.content-section .content p1
+{
     margin-top: 10px;
     font-size: 17px;
     line-height: 1.5;
@@ -67,14 +77,16 @@ body{
     color: var(--dark-secondary);
 }
 
-.content-section .content p2{
+.content-section .content p2
+{
     margin-top: 10px;
     font-size: 17px;
     line-height: 1.5;
     font-weight: bold;
     color: white;
 }
-.content-section .content .button a{
+.content-section .content .button a
+{
     background-color: var(--dark-secondary);
     color: var(--dark-primary);
     padding: 12px 40px;
@@ -83,27 +95,33 @@ body{
     letter-spacing: 1.5px;
 }
 
-.content-section .content .button{
+.content-section .content .button
+{
     margin-top: 30px;
 }
 
-.content-section .content .button:hover a {
+.content-section .content .button:hover a
+{
     border: solid var(--dark-secondary);
     background-color: var(--dark-primary);
     color: var(--dark-secondary);
 }
-.content-section .social{
+.content-section .social
+{
     margin: 40px 35px;
 }
-.content-section .social i{
+.content-section .social i
+{
     color: var(--dark-secondary);
     font-size: 30px;
     padding: 0px 10px;
 }
-.content-section .social i:hover{
+.content-section .social i:hover
+{
     color: white;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px)
+{
     .container{
         width: 80%;
         display: block;

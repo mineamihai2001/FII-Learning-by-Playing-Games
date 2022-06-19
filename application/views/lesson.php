@@ -64,7 +64,7 @@
     </div>
     <div id="bottom-div">
         <button id="next-btn" class="next">
-            <p>Next Lesson</p>
+            Next Lesson
             <i class="fa fa-solid fa-arrow-right"></i>
         </button>
     </div>
