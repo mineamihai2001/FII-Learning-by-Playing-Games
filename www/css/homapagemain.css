@@ -191,3 +191,20 @@ margin-top: -10rem;
   padding-right: 1em;
 }
 /*# sourceMappingURL=homapagemain.css.map */
+
+@media (min-width: 320px) and (max-width: 1000px)
+{
+
+.hero 
+{
+  padding: 0rem;
+  padding-top: 10rem;
+  margin-top: 0rem;
+  -webkit-mask:none;
+  mask:none;
+-webkit-mask-size:33.4% 140%; 
+-webkit-mask-repeat:no-repeat;
+mask-size:33.4% 140%;
+mask-repeat:no-repeat;
+}
+}
