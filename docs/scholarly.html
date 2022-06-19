@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/www/css/scholarly.css">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
   </head>
 
   <body>
@@ -273,11 +276,229 @@
           </p>
         </section>
       </section>
-    <section id="references" role="doc-pagelist">
-      <h2>3. References</h2>
+      <section id="api" role="open-api-documentation">
+        <h2>3. Open API documentation</h2>
+        <div style="font-family: Consolas,serif;">
+          <a href="./openapi.yaml">Click here to download the yaml file of the Open API document</a>
+        </div>
+        <p>
+          <em>Instructions: </em> go to the <a href="https://editor.swagger.io/">Swagger Editor</a> and import/paste the yaml file in the editor to get the full documentation.
+        </p>
+        <p>Or copy and paste the code below</p>
+        <pre><code class="language-yaml" style="font-size: 10px; line-height: 0.2px;" >
+          openapi: 3.0.1
+info:
+  title: LearnTheComputer
+  description: This is a brief description of the available request methods for the
+    LearnTheComputer API.
+  termsOfService: https://learnthecomputer.infinityfreeapp.com/about
+  contact:
+    email: ioan.minea@info.uaic.ro
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://learnthecomputer.infinityfreeapp.com/
+- url: http://learnthecomputer.infinityfreeapp.com/
+tags:
+- name: Lessons
+  description: Load/add lessons on the LearnTheComputer database.
+  externalDocs:
+    description: Find out more
+    url: http://swagger.io
+paths:
+  /add:
+    post:
+      tags:
+      - Lessons
+      summary: Add a new lesson for the app
+      operationId: addLesson
+      requestBody:
+        description: Lesson object that needs to be added in the app
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/postRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+
+  /update:
+    put:
+      tags:
+      - Lessons
+      summary: Update an existing lesson
+      operationId: updateLesson
+      requestBody:
+        description: Lesson object that needs to be modified
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/putRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+      x-codegen-request-body-name: body
+  /delete:
+    delete:
+      tags:
+      - Lessons
+      summary: Delete an existing lesson
+      operationId: deleteLesson
+      requestBody:
+        description: Lesson object that needs to be removed
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deleteRequest'
+        required: true
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+      x-codegen-request-body-name: body
+  /list:
+    get:
+      tags:
+      - Lessons
+      summary: 'List a lesson '
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+      - name: type
+        in: query
+        schema:
+          type: string
+      - name: id
+        in: query
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+        '500':
+          description: A Response Object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessApiResponse'
+      security:
+      - api_key: []
+components:
+  schemas:
+    postRequest:
+      required:
+      - body
+      - name
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+        chapeter:
+          type: integer
+          format: int64
+        name:
+          type: string
+        body:
+          type: string
+    putRequest:
+      required:
+      - body
+      - id
+      - type
+      type: object
+      properties:
+        type:
+          type: string
+        id:
+          type: integer
+          format: int64
+        body:
+          type: string
+    deleteRequest:
+      required:
+      - id
+      - type
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        type:
+          type: string
+    SuccessApiResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "success"
+        body:
+          type: string
+    ErrorApiResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "error"
+        body:
+          type: string
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+        </code></pre>
+        <p>Here is a preview of the document from the <a href="https://editor.swagger.io/">Swagger</a> page.</p>
+        <img src="/www/images/openeapi-1.png" style="width: 60rem;"/>
+      </section>
+      <section id="references" role="doc-pagelist">
+      <h2>4. References</h2>
       <section id="libraries" role="doc-pagelist">
         <h2>
-          3.1 Libraries
+          4.1 Libraries
         </h2>
         <p>
           For the creation of this website, we used a few libraries:
@@ -297,7 +518,7 @@
       </section>
       <section id="otherreferences" role="doc-pagelist">
         <h2>
-          3.2 Other used tools
+          4.2 Other used tools
         </h2>
         <h3>Font Awesome</h3>
           <a href="https://fontawesome.com/">https://fontawesome.com/
