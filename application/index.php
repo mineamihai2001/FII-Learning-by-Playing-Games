@@ -67,6 +67,7 @@ Router::get('/application/list?type={var_type}', function () {
     $controller->request();
 });
 
+// use for POST/PUT/DELETE
 Router::post('/application/request', function () {
     $controller = new MyController();
     $controller->request();
