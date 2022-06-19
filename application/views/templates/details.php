@@ -10,10 +10,10 @@ if ($page) { ?>
                     </h4>
                     <ul>
                         <!-- itemele continute de company -->
-                        <li><a href="#">about us</a></li>
+                        <li><a href="\application\views\html\aboutpage.html">about us</a></li>
                         <li><a href="#">our services</a></li>
                         <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">website GIT</a></li>
+                        <li><a href="https://github.com/mineamihai2001/Learning-by-Playing-Games">website GIT</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -23,7 +23,7 @@ if ($page) { ?>
                     <ul>
                         <!-- itemele continute de gethelp-->
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="https://github.com/mineamihai2001/Learning-by-Playing-Games">contact</a></li>
                         <li><a href="#"></a></li>
                     </ul>
                 </div>
@@ -43,10 +43,10 @@ if ($page) { ?>
                     </h4>
                     <!-- itemele continute de follow us -->
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/mineamihai2001/Learning-by-Playing-Games"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

@@ -3,14 +3,11 @@
 @import "footer.css";
 
 *{
+
     margin:0px;
     padding:0px;
     box-sizing: border-box;
     font-family: var(--font-primary);
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
-    -moz-osx-font-smoothing: grayscale;
 }
 body
 {
