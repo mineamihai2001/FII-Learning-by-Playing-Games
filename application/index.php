@@ -144,6 +144,15 @@ Router::post('/application/account', function() {
     }
 });
 
+Router::post('/application/leaderboards', function() {
+    if (isset($_SESSION['username'])) {
+        $account = new Account();
+        $account->leaderboards();
+    } else {
+        Router::redirect("/application/account");
+    }
+});
+
 Router::post('/application/404', function () {
     echo "<h1>Error 404 page not found</h1>";
 });

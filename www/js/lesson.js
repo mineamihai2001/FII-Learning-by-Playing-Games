@@ -56,7 +56,7 @@ const loadLesson = (response) => {
   content.innerHTML = body.content;
   chapterId.innerHTML = "Chapter " + body.chapter_id;
   chapterName.innerHTML = body.chapter_name;
-  lessonId.innerHTML = "Lesson " + body.id;
+  lessonId.innerHTML = "Lesson " + body.lesson_number;
   lessonName.innerHTML = body.name;
 }
 

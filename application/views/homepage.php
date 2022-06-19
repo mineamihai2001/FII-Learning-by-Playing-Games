@@ -20,7 +20,7 @@
 
       <div class="description">
         <p>
-          LoremIpsumdolor is a learning based game for you <br />
+          LearnTheComputer is a learning based game for you <br />
           to use and lay the foundations of computers
         </p>
       </div>

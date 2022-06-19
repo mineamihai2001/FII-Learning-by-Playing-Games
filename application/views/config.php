@@ -86,7 +86,7 @@ $pages = array(
         "title" => "Account",
         "navbar" => "yes",
         "style" => "/www/css/account.css",
-        "src" => "/www/js/index.js",
+        "src" => "/www/js/account.js",
         "footer" => "yes",
 
     ),

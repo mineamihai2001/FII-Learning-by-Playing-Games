@@ -5,7 +5,7 @@
 <body>
 <?php require_once VIEWS . '/templates/navbar.php' ?>
 <div id="page">
-    <div id="login-frame">
+    <div id="login-frame" meta="login-box" content="The main form where the login credentials are validated">
         <form action="/application/action_login" method="POST" id="login-form" class="component">
             <div class="title">
                 <p>Login</p>

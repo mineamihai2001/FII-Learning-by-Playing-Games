@@ -3,143 +3,28 @@
 @import "footer.css";
 
 body {
-  text-decoration: none;
-  color: white;
-  background: var(--dark-primary);
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-primary);
+    text-decoration: none;
+    color: white;
+    background: var(--dark-primary);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
 }
 
-a {
-  text-decoration: none;
-  color: var(--dark-secondary);
-  cursor: pointer;
+#main{
+    padding: 5rem 0;
 }
 
-.bottompage {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding-bottom: 2em;
-  margin: 0;
+#user-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bottompage img {
-  width: 30px;
+#user-picture{
+    width: 7rem;
 }
 
-.bottompage .leftcorner {
-  margin-top: 16px;
-  padding-left: 5em;
-}
-
-.bottompage .leftcorner .facebook-cta {
-  padding-right: 0.65em;
-}
-
-.bottompage .leftcorner .linkedin-cta {
-  padding-left: 0.65em;
-}
-
-.bottompage .rigthcorner {
-  padding-right: 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: bold;
-}
-
-.bottompage .rigthcorner img {
-  padding-left: -1em;
-  padding-right: 1em;
-}
-/*# sourceMappingURL=homapagemain.css.map */
-
-
-#profilPicture{
-  position:absolute;
-  width:15%;
-  height:20%;
-  right:70%;
-  top:20%;
-}
-
-#layer1{
-  
-  color:#E84646;
-  position:absolute;
-  width:15%;
-  height:15%;
-  right:70%;
-  top:40%;
-}
-
-#progressLesson{
-  
-  color:#E84646;
-  position:absolute;
-  width:45%;
-  height:15%;
-  right:20%;
-  top:18%;
-}
-
-#progressQuizz{
-  color:#E84646;
-  position:absolute;
-  width:45%;
-  height:15%;
-  right:20%;
-  top:38%;
-}
-
-#QuizzLeaderboardHead{
-  background-color:#333757;
-  border-radius:15px 15px 0px 0px;
-  position:absolute;
-  width:28.5%;
-  height:5%;
-  right:6%;
-  top:20%;
-}
-
-#QuizzLeaderboardBody{
-  background-color:#E84646;
-  border-radius:0px 0px 15px 15px;
-  position:absolute;
-  width:28.5%;
-  height:22%;
-  right:6%;
-  top:25%;
-}
-
-
-
-.primary-cta {
-  position:absolute;
-  width:5%;
-  height:3%;
-  right:47.5%;
-  top:75%;
-  border: 4px solid var(--dark-secondary);
-  font-weight: bold;
-  font-size: 1.75em;
-  padding: 0.35em 1.30em;
-  margin: 0.5em;
-}
-
-.primary-cta:hover {
-  background: var(--dark-secondary);
-}
-
-.primary-cta:hover a {
-  color: var(--dark-primary);
+#status {
+    padding: 0 20rem;
 }

@@ -25,7 +25,7 @@
                       Thanks for using our website and for any questions the user can contact us with the details given in the documentation link bellow.
                     </p>
                     <div class="button">
-                        <a href="\docs\scholarly.html"> >>>Documentation here<<< </a>
+                        <a href="\docs\scholarly.html"> >>> Documentation here <<< </a>
                     </div>
                 </div>
                 <div class="social">

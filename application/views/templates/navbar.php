@@ -3,7 +3,7 @@ if ($page) { ?>
 
     <nav class="navbar">
         <div class="nav-item nav-brand">
-            <a class="nav-logo" href="">
+            <a class="nav-logo" href="/application/home">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve">
                     <g id="Layer_2" />
                     <g id="Layer_3" />
@@ -83,7 +83,7 @@ if ($page) { ?>
                     <g id="Layer_30" />
                     <g id="Layer_31" />
                 </svg>
-                <p>Lorem<b>Ipsumdolor</b></p>
+                <p>Learn<b>TheComputer</b></p>
             </a>
         </div>
         <?php if ($page['navbar'] == "yes") { ?>
