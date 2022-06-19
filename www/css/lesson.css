@@ -61,7 +61,7 @@ button {
   justify-content: center;
   align-items: center;
   color: white;
-  overflow: scroll;
+  /*overflow: scroll;*/
   margin-left: 5rem;
 }
 #learn > p {
