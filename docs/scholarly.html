@@ -105,7 +105,7 @@
         <ol role="directory">
           <li>
             <a href="#introduction"><b>1. Introduction</b></a>
-            <ol role="introduction-directory">
+            <ol role="directory">
               <li><a href="#introduction__purpose">1.1 Purpose</a></li>
               <li>
                 <a href="#introduction__audience"
@@ -118,7 +118,7 @@
           <li>
             <a href="#General-structure"><b>2. Structure</b></a>
             
-            <ol role="General-structure-directory">
+            <ol role="directory">
               <li><a href="#General-structure_uml">2.1 UML</a></li>
               <li><a href="#General-structure_flow">2.2 Flow</a></li>
               <li><a href="#General-structure_screenshot">2.3 Screenshot</a></li>
@@ -127,7 +127,7 @@
           <li>
             <a href="#structure"><b>3. Page Structure</b></a>
             
-            <ol role="structure-directory">
+            <ol role="directory">
               <li><a href="#structure_home">3.1 Home Page</a></li>
               <li><a href="#structure_login">3.2 Login/Sign-up Page</a></li>
               <li><a href="#structure_lesson">3.3 Lesson Page</a></li>
@@ -139,13 +139,13 @@
           <li>
             <a href="#APIstructure"><b>4. Open API documentation</b></a>
             
-            <ol role="APIstructure-directory">
+            <ol role="directory">
             </ol>
           </li>
           <li>
             <a href="#refstructure"><b>5. Page Structure</b></a>
             
-            <ol role="refstructure-directory">
+            <ol role="directory">
               <li><a href="#refstructure_libraries">5.1 Libraries Used</a></li>
               <li><a href="#refstructure_other">5.2 Other used tools</a></li>
             </ol>
@@ -220,7 +220,7 @@
         <section id="structure_home" role="doc-pagelist">
           <h3>3.1 Home</h3>
           <p>
-            The <a href="\application\views\html\homepage.html">Homepage</a>
+            The <a href="/application/homepage">Homepage</a>
           </p>
           <p>The Homepage is the landing page of every user, new or not. 
             It has 3 main components, the navigation bar, the main page / hero section and the footer.
@@ -234,7 +234,7 @@
         <section id="structure_login" role="doc-pagelist">
           <h3>3.2 Login/Sign-up</h3>
           <p>
-            <a href="\application\views\html\login.html">Login</a>
+            <a href="/application/login">Login</a>
           </p>
           <p>
             The login/sign-up pages are the most important pages on our website.
@@ -253,7 +253,7 @@
         <section id="structure_lesson" role="doc-pagelist">
           <h3>3.3 Lesson</h3>
           <p>
-            <a href="\application\views\html\lesson.html">Lesson</a>
+            <a href="/application/lesson">Lesson</a>
           </p>
           <p> 
             Lesson page is where you study, where you learn new things about computer hardware.
@@ -267,7 +267,7 @@
         <section id="structure_admin" role="doc-pagelist">
           <h3>3.4 Admin Console</h3>
           <p>
-            <a href="\application\views\html\AdminConsole.html">Admin</a>
+            <a href="/application/admin">Admin</a>
           </p>
           <p>
             Admin console is designed in a way to ease our job, any admin's job to be exact. 
@@ -280,7 +280,7 @@
         <section id="structure_accountpage" role="doc-pagelist">
           <h3>3.5 Account</h3>
           <p>
-            <a href="\application\views\html\account.html">Account</a>
+            <a href="/application/account">Account</a>
           </p>
           <p>
             We can't miss the account page.
@@ -294,7 +294,7 @@
         <section id="structure_aboutpage" role="doc-pagelist">
           <h3>3.6 About</h3>
           <p>
-            <a href="\application\views\html\aboutpage.html">About</a>
+            <a href="/application/about">About</a>
           </p>
           <p>
             The about page is where the user comes when he wants more information than that shown on the homepage.
@@ -306,7 +306,7 @@
           </p>
         </section>
       </section>
-      <section id="APIstructure" role="open-api-documentation">
+      <section id="APIstructure" role="doc-chapter">
         <h2>4. Open API documentation</h2>
         <div style="font-family: Consolas,serif;">
           <a href="./openapi.yaml">Click here to download the yaml file of the Open API document</a>
@@ -537,7 +537,7 @@ components:
           <a href="http://tabulator.info/docs/5.2/theme#standard">http://tabulator.info/docs/5.2/theme#standard
           </a>
         <p>
-        This is the library used to create tables, we created tables on the <a href="\application\views\html\account.html">account</a> page.
+        This is the library used to create tables, we created tables on the <a href="/application/account">account</a> page.
         </p>
         <h3>JS-Cookie</h3>
           <a href="https://github.com/js-cookie/js-cookie">https://github.com/js-cookie/js-cookie
@@ -560,7 +560,7 @@ components:
           <a href="https://developers.google.com/identity/sign-in/web/sign-in">https://developers.google.com/identity/sign-in/web/sign-in
           </a>
         <p>
-          This is a really important link because this made possible the login with Google options on our <a href="\application\views\html\login.html">login/signup</a> page. Thanks Google, really cool!
+          This is a really important link because this made possible the login with Google options on our <a href="/application/login">login/signup</a> page. Thanks Google, really cool!
         </p>
         <h3>Scholarly HTML</h3>
           <a href="https://github.com/w3c/scholarly-html">https://github.com/w3c/scholarly-html
