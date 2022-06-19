@@ -1,14 +1,20 @@
-
 @import "normalize.css/normalize.css";
 @import "../fonts/roboto.css";
 @import "../fonts/roboto-mono.css";
+@import "assets.css";
 
 /*
   XXX
   figure styles
   links
 */
-
+*{
+    text-decoration: none;
+}
+a 
+{
+    color: #9400bf;
+}
 body {
     max-width: 21cm;
     margin: auto;
